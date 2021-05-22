@@ -5,10 +5,11 @@ music {
   }
   var kupa=13;
   var notes = [A, B, G];
-  composition(notes);
-  composition([G,D]);
   transpose(am);
-  var comp = composition([G,D]);
-  write("hellostring", composition([G,D]));
-  write("asdsd", comp);
+  write( "hellostring", composition( [G,D] ) );
+
+  var i = 2;
+  while (i < 7) {
+    print("hello there");
+  }
 }
