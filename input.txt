@@ -1,0 +1,14 @@
+music {
+  var dupa=12;
+  if (True) {
+    var x=15;
+  }
+  var kupa=13;
+  var notes = [A, B, G];
+  composition(notes);
+  composition([G,D]);
+  transpose(am);
+  var comp = composition([G,D]);
+  write("hellostring", composition([G,D]));
+  write("asdsd", comp);
+}
