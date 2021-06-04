@@ -1,0 +1,6 @@
+music {
+  var y = True;
+  print(y);
+  var x = 5 == 3;
+  print(x);
+}

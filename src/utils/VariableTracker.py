@@ -2,6 +2,8 @@ from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from src.types.sound import Sound
 from src.types.number import Number
 from src.types.container import Container
+from .LogicalExpression import LogicalExpression
+
 class VariableTracker():
     values = {}
     def get(self, name):
@@ -32,5 +34,11 @@ class VariableTracker():
         maybe_container = ctx.containerStatement()
         if maybe_container:
             return Container(maybe_container)
-        # todo logical  expr, container stmt
+        
+        maybe_logical_expr = ctx.logicalExpression()
+        if maybe_logical_expr:
+            return LogicalExpression(self, maybe_logical_expr)
+
+        raise TypeError(f'Cannot assign to variable: {ctx.getText()}')
+    
     
