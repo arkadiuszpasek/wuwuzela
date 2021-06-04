@@ -5,4 +5,11 @@ music {
   print(x);
   var z = 5 == 5;
   print(z);
+  var c = not 5 == 5;
+  print(c);
+
+  var d = 5 > 5;
+  print(d);
+  var e = 5 >= 5;
+  print(e);
 }
