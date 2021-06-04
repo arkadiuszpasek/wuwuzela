@@ -14,6 +14,7 @@ class LogicalExpression():
             expr = LogicalExpression(variables, ctx.logicalExpression(0))
             value = not expr.value
             
+        # TODO: brackets, AND OR
         self.value = value
 
 
