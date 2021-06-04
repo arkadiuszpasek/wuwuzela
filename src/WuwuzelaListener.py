@@ -1,20 +1,15 @@
-# Generated from Wuwuzela_Grammar.g4 by ANTLR 4.9.2
 from antlr4 import *
-if __name__ is not None and "." in __name__:
-    from .Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-else:
-    from Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 
-# This class defines a complete listener for a parse tree produced by Wuwuzela_GrammarParser.
-class Wuwuzela_GrammarListener(ParseTreeListener):
+from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
+from grammar.Wuwuzela_GrammarListener import Wuwuzela_GrammarListener
 
-    # Enter a parse tree produced by Wuwuzela_GrammarParser#musicProgram.
+class WuwuzelaListener(Wuwuzela_GrammarListener):
     def enterMusicProgram(self, ctx:Wuwuzela_GrammarParser.MusicProgramContext):
-        pass
+        print("enterMusic")
 
     # Exit a parse tree produced by Wuwuzela_GrammarParser#musicProgram.
     def exitMusicProgram(self, ctx:Wuwuzela_GrammarParser.MusicProgramContext):
-        pass
+        print("exitrMusic")
 
 
     # Enter a parse tree produced by Wuwuzela_GrammarParser#declaration.
@@ -195,7 +190,3 @@ class Wuwuzela_GrammarListener(ParseTreeListener):
     # Exit a parse tree produced by Wuwuzela_GrammarParser#trueFalse.
     def exitTrueFalse(self, ctx:Wuwuzela_GrammarParser.TrueFalseContext):
         pass
-
-
-
-del Wuwuzela_GrammarParser

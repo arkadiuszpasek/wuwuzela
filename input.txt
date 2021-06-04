@@ -1,15 +1,3 @@
 music {
   var dupa=12;
-  if (True) {
-    var x=15;
-  }
-  var kupa=13;
-  var notes = [A, B, G];
-  transpose(am);
-  write( "hellostring", composition( [G,D] ) );
-
-  var i = 2;
-  while (i < 7) {
-    print("hello there");
-  }
 }

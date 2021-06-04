@@ -1,5 +1,7 @@
 ### running pygrun
 
 `python3 py3antlr4book/bin/pygrun Wuwuzela_Grammar musicProgram --tree input.txt`
-or
-`script.py`
+
+### Running listener
+
+`python script.py input.txt`
