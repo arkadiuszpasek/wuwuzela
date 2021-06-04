@@ -3,6 +3,7 @@ from antlr4 import *
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from grammar.Wuwuzela_GrammarListener import Wuwuzela_GrammarListener
 from .utils.VariableTracker import VariableTracker
+from .utils.Equation import Equation
 class WuwuzelaListener(Wuwuzela_GrammarListener):
     variables = VariableTracker()
     def enterMusicProgram(self, ctx:Wuwuzela_GrammarParser.MusicProgramContext):
@@ -43,7 +44,22 @@ class WuwuzelaListener(Wuwuzela_GrammarListener):
 
     # Enter a parse tree produced by Wuwuzela_GrammarParser#printStatement.
     def enterPrintStatement(self, ctx:Wuwuzela_GrammarParser.PrintStatementContext):
-        pass
+        value: Wuwuzela_GrammarParser.ValueContext = ctx.value()
+        
+        maybe_str = value.STRING()
+        if maybe_str:
+            print(str(maybe_str))
+            return
+
+        maybe_variable = value.VARIABLE()
+        if maybe_variable:
+            print(str(self.variables.get(str(maybe_variable))))
+            return
+        
+        maybe_equation = value.equation()
+        if maybe_equation:
+            print(Equation(self.variables, maybe_equation).value)
+            return
 
     # Exit a parse tree produced by Wuwuzela_GrammarParser#printStatement.
     def exitPrintStatement(self, ctx:Wuwuzela_GrammarParser.PrintStatementContext):

@@ -1,9 +1,12 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from src.types.sound import Sound
 from src.types.number import Number
-
+from src.types.container import Container
 class VariableTracker():
     values = {}
+    def get(self, name):
+        return self.values[name]
+
     def new(self, name, ctx: Wuwuzela_GrammarParser.VarStatementContentContext):
         self.values[name] = self.ctxToValue(ctx)
     
@@ -26,5 +29,8 @@ class VariableTracker():
         if maybe_variable and maybe_variable in self.values:
             return self.values[maybe_variable]
 
+        maybe_container = ctx.containerStatement()
+        if maybe_container:
+            return Container(maybe_container)
         # todo logical  expr, container stmt
     
