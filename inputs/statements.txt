@@ -1,0 +1,10 @@
+music {
+  print("Hello there");
+
+  if (5 > 3) {
+    print("5...>3..");
+  }
+  if (6 < 3) {
+    print("6...<3..");
+  }
+}

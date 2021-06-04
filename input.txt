@@ -1,4 +1,0 @@
-music {
-  var dupa=12;
-  var pupa=C#;
-}

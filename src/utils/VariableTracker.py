@@ -1,30 +1,40 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from src.types.sound import Sound
-from src.types.number import Number
+from src.types.Sound import Sound
+from src.types.Number import Number
+from src.types.Container import Container
+from src.expressions.LogicalExpression import LogicalExpression
 
 class VariableTracker():
     values = {}
+    def get(self, name):
+        if not name in self.values:
+            raise ValueError(f'Value {name} does not exist')
+        return self.values[name]
+
     def new(self, name, ctx: Wuwuzela_GrammarParser.VarStatementContentContext):
         self.values[name] = self.ctxToValue(ctx)
     
+    # TODO: do we event allow variable reassignment?
     def update(self, name, value):
         if name in self:
             self[name] = value
-        # else:
-            # exit with error undefined reference? but that's probably not possible to get from parser
 
     def ctxToValue(self, ctx: Wuwuzela_GrammarParser.VarStatementContentContext):
-        maybe_number = ctx.NUMBER()
-        if maybe_number:
-            return Number(maybe_number)
+        if ctx.NUMBER():
+            return Number(ctx.NUMBER())
         
-        maybe_sound = ctx.SOUND()
-        if maybe_sound:
-            return Sound(maybe_sound)
+        if ctx.SOUND():
+            return Sound(ctx.SOUND())
 
-        maybe_variable = ctx.VARIABLE()
-        if maybe_variable and maybe_variable in self.values:
-            return self.values[maybe_variable]
+        if ctx.VARIABLE() and ctx.VARIABLE() in self.values:
+            return self.values[ctx.VARIABLE()]
 
-        # todo logical  expr, container stmt
+        if ctx.containerStatement():
+            return Container(ctx.containerStatement())
+        
+        if ctx.logicalExpression():
+            return LogicalExpression(self, ctx.logicalExpression())
+
+        raise TypeError(f'Cannot assign to variable: {ctx.getText()}')
+    
     

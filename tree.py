@@ -11,9 +11,7 @@ def main(argv):
     parser = Wuwuzela_GrammarParser(stream)
     tree = parser.musicProgram()
 
-    listener = WuwuzelaListener()
-    walker = ParseTreeWalker()
-    walker.walk(listener, tree)
+    print(tree.toStringTree(recog=parser))
 
 if __name__ == '__main__':
     main(sys.argv)
