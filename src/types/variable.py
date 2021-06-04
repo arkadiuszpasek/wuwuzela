@@ -1,5 +1,7 @@
 
 class Variable():
+    value = None
+
     def __init__(self):
         pass
 

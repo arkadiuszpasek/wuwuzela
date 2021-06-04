@@ -1,4 +1,4 @@
-from .variable import Variable
+from .Variable import Variable
 
 class Number(Variable):
     value = None

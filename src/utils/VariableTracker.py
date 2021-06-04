@@ -1,7 +1,7 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from src.types.sound import Sound
-from src.types.number import Number
-from src.types.container import Container
+from src.types.Sound import Sound
+from src.types.Number import Number
+from src.types.Container import Container
 from .LogicalExpression import LogicalExpression
 
 class VariableTracker():

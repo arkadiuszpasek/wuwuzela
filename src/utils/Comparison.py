@@ -1,11 +1,10 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from .Element import Element
 from .Equation import Equation
-from src.types.number import Number
+from src.types.Number import Number
 
 class Comparison():
-    def __init__(self, variables, ctx: Wuwuzela_GrammarParser.ComparisonContext,
-        left, right):
+    def __init__(self, variables, ctx: Wuwuzela_GrammarParser.ComparisonContext, left, right):
         if type(left) == Wuwuzela_GrammarParser.ElementContext and type(right) == Wuwuzela_GrammarParser.ElementContext:
             self.handle_element_comparison(variables, ctx, left, right)
 
