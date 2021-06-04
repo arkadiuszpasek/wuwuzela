@@ -5,3 +5,7 @@
 ### Running listener
 
 `python script.py input.txt`
+
+Antlr python book reference
+
+https://github.com/jszheng/py3antlr4book
