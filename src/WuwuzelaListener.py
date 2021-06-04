@@ -2,14 +2,16 @@ from antlr4 import *
 
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from grammar.Wuwuzela_GrammarListener import Wuwuzela_GrammarListener
-
+from .utils.VariableTracker import VariableTracker
 class WuwuzelaListener(Wuwuzela_GrammarListener):
+    variables = VariableTracker()
     def enterMusicProgram(self, ctx:Wuwuzela_GrammarParser.MusicProgramContext):
-        print("enterMusic")
+        pass
 
     # Exit a parse tree produced by Wuwuzela_GrammarParser#musicProgram.
     def exitMusicProgram(self, ctx:Wuwuzela_GrammarParser.MusicProgramContext):
-        print("exitrMusic")
+        for k in self.variables.values:
+            print(f'{k} - - {self.variables.values[k]}')
 
 
     # Enter a parse tree produced by Wuwuzela_GrammarParser#declaration.
@@ -68,7 +70,7 @@ class WuwuzelaListener(Wuwuzela_GrammarListener):
 
     # Enter a parse tree produced by Wuwuzela_GrammarParser#varStatement.
     def enterVarStatement(self, ctx:Wuwuzela_GrammarParser.VarStatementContext):
-        pass
+        self.variables.new(str(ctx.VARIABLE()), ctx.varStatementContent())
 
     # Exit a parse tree produced by Wuwuzela_GrammarParser#varStatement.
     def exitVarStatement(self, ctx:Wuwuzela_GrammarParser.VarStatementContext):
