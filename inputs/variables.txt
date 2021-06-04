@@ -1,7 +1,9 @@
 music {
   var dupa=12;
   var pupa=C#;
-  print("Hello there");
+  var cont = [A#, B#, C];
+
+  print(cont)
   print(dupa);
   print(dupa * 5);
   print(1+3);
@@ -9,6 +11,4 @@ music {
   print(1*3);
   print(1/3);
 
-  var cont = [A#, B#, C];
-  print(cont)
 }

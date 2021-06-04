@@ -1,5 +1,5 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from src.utils.Equation import Equation
+from src.expressions.Equation import Equation
 
 class PrintStatement():
     def __init__(self, variables, ctx: Wuwuzela_GrammarParser.PrintStatementContext):

@@ -2,7 +2,7 @@ from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from src.types.Sound import Sound
 from src.types.Number import Number
 from src.types.Container import Container
-from .LogicalExpression import LogicalExpression
+from src.expressions.LogicalExpression import LogicalExpression
 
 class VariableTracker():
     values = {}

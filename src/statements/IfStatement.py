@@ -1,5 +1,5 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from src.utils.LogicalExpression import LogicalExpression
+from src.expressions.LogicalExpression import LogicalExpression
 
 class IfStatement():
     def __init__(self, variables, ctx: Wuwuzela_GrammarParser.IfStatementContext):
