@@ -1,11 +1,10 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from .VariableTracker import VariableTracker
 from .Element import Element
 from .Equation import Equation
 from src.types.number import Number
 
 class Comparison():
-    def __init__(self, variables: VariableTracker, ctx: Wuwuzela_GrammarParser.ComparisonContext,
+    def __init__(self, variables, ctx: Wuwuzela_GrammarParser.ComparisonContext,
         left, right):
         if type(left) == Wuwuzela_GrammarParser.ElementContext and type(right) == Wuwuzela_GrammarParser.ElementContext:
             self.handle_element_comparison(variables, ctx, left, right)
@@ -14,7 +13,7 @@ class Comparison():
             self.handle_equation_comparison(variables, ctx, left, right)
         
 
-    def handle_equation_comparison(self, variables: VariableTracker, ctx: Wuwuzela_GrammarParser.ComparisonContext,
+    def handle_equation_comparison(self, variables, ctx: Wuwuzela_GrammarParser.ComparisonContext,
         left_ctx: Wuwuzela_GrammarParser.EquationContext, right_ctx: Wuwuzela_GrammarParser.EquationContext):
             left = Equation(variables, left_ctx).value
             right = Equation(variables, right_ctx).value
@@ -30,7 +29,7 @@ class Comparison():
             elif ctx.LESS_EQUAL():
                 self.value = left.value <= right.value
 
-    def handle_element_comparison(self, variables: VariableTracker, ctx: Wuwuzela_GrammarParser.ComparisonContext,
+    def handle_element_comparison(self, variables, ctx: Wuwuzela_GrammarParser.ComparisonContext,
         left_ctx: Wuwuzela_GrammarParser.ElementContext, right_ctx: Wuwuzela_GrammarParser.ElementContext):
             left: Number = Element(variables, left_ctx).value
             right: Number = Element(variables, right_ctx).value

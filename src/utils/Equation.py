@@ -1,10 +1,9 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from .VariableTracker import VariableTracker
 from src.types.number import Number
 from .Element import Element
 
 class Equation():
-    def __init__(self, variables: VariableTracker, ctx: Wuwuzela_GrammarParser.EquationContext):
+    def __init__(self, variables, ctx: Wuwuzela_GrammarParser.EquationContext):
         left = Element(variables, ctx.element(0))
         right = Element(variables, ctx.element(1))
         if left.value == None or type(left.value) != Number \
