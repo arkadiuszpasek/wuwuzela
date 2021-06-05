@@ -1,5 +1,5 @@
-from .Variable import Variable
-from .Sound import Sound
+from .variable import Variable
+from .sound import Sound
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 
 class Container(Variable):

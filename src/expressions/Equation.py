@@ -1,5 +1,5 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from src.types.Number import Number
+from src.types.number import Number
 from .Element import Element
 
 class Equation():

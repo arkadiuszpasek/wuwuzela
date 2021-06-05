@@ -1,5 +1,5 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from src.types.Number import Number
+from src.types.number import Number
 
 class Element():
     def __init__(self, variables, ctx: Wuwuzela_GrammarParser.ElementContext):

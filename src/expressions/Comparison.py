@@ -1,7 +1,7 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from .Element import Element
 from .Equation import Equation
-from src.types.Number import Number
+from src.types.number import Number
 
 class Comparison():
     def __init__(self, variables, ctx: Wuwuzela_GrammarParser.ComparisonContext, left, right):
