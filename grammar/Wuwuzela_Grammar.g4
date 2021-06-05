@@ -131,9 +131,9 @@ element:
 
 mathOperation: 
     PLUS
-    MINUS
-    DIVIDE
-    MULTIPLY
+    | MINUS
+    | DIVIDE
+    | MULTIPLY
 ;
 
 trueFalse:

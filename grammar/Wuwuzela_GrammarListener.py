@@ -1,6 +1,9 @@
 # Generated from Wuwuzela_Grammar.g4 by ANTLR 4.9.2
 from antlr4 import *
-from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
+if __name__ is not None and "." in __name__:
+    from .Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
+else:
+    from Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 
 # This class defines a complete listener for a parse tree produced by Wuwuzela_GrammarParser.
 class Wuwuzela_GrammarListener(ParseTreeListener):
