@@ -3,7 +3,7 @@ music {
   var pupa=C#;
   var cont = [A#, B#, C];
 
-  print(cont)
+  print(cont);
   print(dupa);
   print(dupa * 5);
   print(1+3);
