@@ -1,0 +1,4 @@
+music {
+  var cont = [A#, B#, C];
+  write("hehe", composition([A#, B#, C]));
+}
