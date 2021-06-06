@@ -11,5 +11,5 @@ class Statement():
         elif ctx.ifStatement():
             IfStatement(variables, ctx.ifStatement())
         elif ctx.write():
-            WriteStatement(ctx.write())
+            WriteStatement(variables, ctx.write())
         # TODO: finish the rest of statements
