@@ -1,0 +1,4 @@
+music {
+  var cont =  [C, D#, F#, G, B, D#, E#, F#, G#, A#, Cb, Bb, Db, Eb, Fb, Gb, Abbbbb];
+  write("hehe.mid", composition(cont));
+}

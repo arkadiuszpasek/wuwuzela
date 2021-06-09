@@ -12,7 +12,7 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3)")
-        buf.write("\u00c4\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u00c1\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\3\2\3\2\3\2\7\2\60\n\2")
@@ -28,34 +28,34 @@ def serializedATN():
         buf.write("\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\5\20\u00a5")
         buf.write("\n\20\3\20\3\20\3\20\3\20\7\20\u00ab\n\20\f\20\16\20\u00ae")
         buf.write("\13\20\3\21\3\21\3\22\3\22\3\23\3\23\3\23\3\23\3\24\3")
-        buf.write("\24\3\24\5\24\u00bb\n\24\3\25\3\25\3\25\3\25\3\25\3\26")
-        buf.write("\3\26\3\26\2\3\36\27\2\4\6\b\n\f\16\20\22\24\26\30\32")
-        buf.write("\34\36 \"$&(*\2\5\3\2\n\13\3\2\23\27\3\2\b\t\2\u00c5\2")
-        buf.write(",\3\2\2\2\48\3\2\2\2\6?\3\2\2\2\bA\3\2\2\2\nI\3\2\2\2")
-        buf.write("\fS\3\2\2\2\16U\3\2\2\2\20]\3\2\2\2\22h\3\2\2\2\24j\3")
-        buf.write("\2\2\2\26r\3\2\2\2\30w\3\2\2\2\32\u0086\3\2\2\2\34\u0088")
-        buf.write("\3\2\2\2\36\u00a4\3\2\2\2 \u00af\3\2\2\2\"\u00b1\3\2\2")
-        buf.write("\2$\u00b3\3\2\2\2&\u00ba\3\2\2\2(\u00bc\3\2\2\2*\u00c1")
-        buf.write("\3\2\2\2,-\7\3\2\2-\61\7 \2\2.\60\5\4\3\2/.\3\2\2\2\60")
-        buf.write("\63\3\2\2\2\61/\3\2\2\2\61\62\3\2\2\2\62\64\3\2\2\2\63")
-        buf.write("\61\3\2\2\2\64\65\7!\2\2\65\3\3\2\2\2\669\5\6\4\2\679")
-        buf.write("\5\20\t\28\66\3\2\2\28\67\3\2\2\29\5\3\2\2\2:@\5\b\5\2")
-        buf.write(";@\5\n\6\2<@\5\16\b\2=@\5\30\r\2>@\5\34\17\2?:\3\2\2\2")
-        buf.write("?;\3\2\2\2?<\3\2\2\2?=\3\2\2\2?>\3\2\2\2@\7\3\2\2\2AB")
-        buf.write("\7\f\2\2BC\7\34\2\2CD\5\36\20\2DE\7\35\2\2EF\7 \2\2FG")
-        buf.write("\5\4\3\2GH\7!\2\2H\t\3\2\2\2IJ\7\16\2\2JK\7\34\2\2KL\5")
-        buf.write("\f\7\2LM\7\35\2\2MN\7\21\2\2N\13\3\2\2\2OT\3\2\2\2PT\7")
-        buf.write("(\2\2QT\7&\2\2RT\5$\23\2SO\3\2\2\2SP\3\2\2\2SQ\3\2\2\2")
-        buf.write("SR\3\2\2\2T\r\3\2\2\2UV\7\5\2\2VW\7\34\2\2WX\5\36\20\2")
-        buf.write("XY\7\35\2\2YZ\7 \2\2Z[\5\4\3\2[\\\7!\2\2\\\17\3\2\2\2")
-        buf.write("]^\7\4\2\2^_\7&\2\2_`\7\20\2\2`a\5\22\n\2ab\7\21\2\2b")
-        buf.write("\21\3\2\2\2ci\7\"\2\2di\7&\2\2ei\7$\2\2fi\5\36\20\2gi")
-        buf.write("\5\24\13\2hc\3\2\2\2hd\3\2\2\2he\3\2\2\2hf\3\2\2\2hg\3")
-        buf.write("\2\2\2i\23\3\2\2\2jk\7\36\2\2kl\5\26\f\2lm\7\37\2\2m\25")
-        buf.write("\3\2\2\2no\7\"\2\2oq\7\22\2\2pn\3\2\2\2qt\3\2\2\2rp\3")
-        buf.write("\2\2\2rs\3\2\2\2su\3\2\2\2tr\3\2\2\2uv\7\"\2\2v\27\3\2")
-        buf.write("\2\2wx\7\17\2\2xy\7\34\2\2yz\7#\2\2z{\7\35\2\2{|\7\21")
-        buf.write("\2\2|\31\3\2\2\2}~\7\6\2\2~\177\7\34\2\2\177\u0080\5\24")
+        buf.write("\24\3\24\5\24\u00bb\n\24\3\25\3\25\3\26\3\26\3\26\2\3")
+        buf.write("\36\27\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*\2")
+        buf.write("\6\3\2\n\13\3\2\23\27\3\2\30\33\3\2\b\t\2\u00c2\2,\3\2")
+        buf.write("\2\2\48\3\2\2\2\6?\3\2\2\2\bA\3\2\2\2\nI\3\2\2\2\fS\3")
+        buf.write("\2\2\2\16U\3\2\2\2\20]\3\2\2\2\22h\3\2\2\2\24j\3\2\2\2")
+        buf.write("\26r\3\2\2\2\30w\3\2\2\2\32\u0086\3\2\2\2\34\u0088\3\2")
+        buf.write("\2\2\36\u00a4\3\2\2\2 \u00af\3\2\2\2\"\u00b1\3\2\2\2$")
+        buf.write("\u00b3\3\2\2\2&\u00ba\3\2\2\2(\u00bc\3\2\2\2*\u00be\3")
+        buf.write("\2\2\2,-\7\3\2\2-\61\7 \2\2.\60\5\4\3\2/.\3\2\2\2\60\63")
+        buf.write("\3\2\2\2\61/\3\2\2\2\61\62\3\2\2\2\62\64\3\2\2\2\63\61")
+        buf.write("\3\2\2\2\64\65\7!\2\2\65\3\3\2\2\2\669\5\6\4\2\679\5\20")
+        buf.write("\t\28\66\3\2\2\28\67\3\2\2\29\5\3\2\2\2:@\5\b\5\2;@\5")
+        buf.write("\n\6\2<@\5\16\b\2=@\5\30\r\2>@\5\34\17\2?:\3\2\2\2?;\3")
+        buf.write("\2\2\2?<\3\2\2\2?=\3\2\2\2?>\3\2\2\2@\7\3\2\2\2AB\7\f")
+        buf.write("\2\2BC\7\34\2\2CD\5\36\20\2DE\7\35\2\2EF\7 \2\2FG\5\4")
+        buf.write("\3\2GH\7!\2\2H\t\3\2\2\2IJ\7\16\2\2JK\7\34\2\2KL\5\f\7")
+        buf.write("\2LM\7\35\2\2MN\7\21\2\2N\13\3\2\2\2OT\3\2\2\2PT\7(\2")
+        buf.write("\2QT\7&\2\2RT\5$\23\2SO\3\2\2\2SP\3\2\2\2SQ\3\2\2\2SR")
+        buf.write("\3\2\2\2T\r\3\2\2\2UV\7\5\2\2VW\7\34\2\2WX\5\36\20\2X")
+        buf.write("Y\7\35\2\2YZ\7 \2\2Z[\5\4\3\2[\\\7!\2\2\\\17\3\2\2\2]")
+        buf.write("^\7\4\2\2^_\7&\2\2_`\7\20\2\2`a\5\22\n\2ab\7\21\2\2b\21")
+        buf.write("\3\2\2\2ci\7\"\2\2di\7&\2\2ei\7$\2\2fi\5\36\20\2gi\5\24")
+        buf.write("\13\2hc\3\2\2\2hd\3\2\2\2he\3\2\2\2hf\3\2\2\2hg\3\2\2")
+        buf.write("\2i\23\3\2\2\2jk\7\36\2\2kl\5\26\f\2lm\7\37\2\2m\25\3")
+        buf.write("\2\2\2no\7\"\2\2oq\7\22\2\2pn\3\2\2\2qt\3\2\2\2rp\3\2")
+        buf.write("\2\2rs\3\2\2\2su\3\2\2\2tr\3\2\2\2uv\7\"\2\2v\27\3\2\2")
+        buf.write("\2wx\7\17\2\2xy\7\34\2\2yz\7#\2\2z{\7\35\2\2{|\7\21\2")
+        buf.write("\2|\31\3\2\2\2}~\7\6\2\2~\177\7\34\2\2\177\u0080\5\24")
         buf.write("\13\2\u0080\u0081\7\35\2\2\u0081\u0087\3\2\2\2\u0082\u0083")
         buf.write("\7\6\2\2\u0083\u0084\7\34\2\2\u0084\u0085\7&\2\2\u0085")
         buf.write("\u0087\7\35\2\2\u0086}\3\2\2\2\u0086\u0082\3\2\2\2\u0087")
@@ -81,10 +81,8 @@ def serializedATN():
         buf.write("\u00b6\5&\24\2\u00b6%\3\2\2\2\u00b7\u00bb\3\2\2\2\u00b8")
         buf.write("\u00bb\7&\2\2\u00b9\u00bb\7$\2\2\u00ba\u00b7\3\2\2\2\u00ba")
         buf.write("\u00b8\3\2\2\2\u00ba\u00b9\3\2\2\2\u00bb\'\3\2\2\2\u00bc")
-        buf.write("\u00bd\7\30\2\2\u00bd\u00be\7\31\2\2\u00be\u00bf\7\33")
-        buf.write("\2\2\u00bf\u00c0\7\32\2\2\u00c0)\3\2\2\2\u00c1\u00c2\t")
-        buf.write("\4\2\2\u00c2+\3\2\2\2\r\618?Shr\u0086\u008f\u00a4\u00ac")
-        buf.write("\u00ba")
+        buf.write("\u00bd\t\4\2\2\u00bd)\3\2\2\2\u00be\u00bf\t\5\2\2\u00bf")
+        buf.write("+\3\2\2\2\r\618?Shr\u0086\u008f\u00a4\u00ac\u00ba")
         return buf.getvalue()
 
 
@@ -1585,16 +1583,16 @@ class Wuwuzela_GrammarParser ( Parser ):
 
         localctx = Wuwuzela_GrammarParser.MathOperationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 38, self.RULE_mathOperation)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 186
-            self.match(Wuwuzela_GrammarParser.PLUS)
-            self.state = 187
-            self.match(Wuwuzela_GrammarParser.MINUS)
-            self.state = 188
-            self.match(Wuwuzela_GrammarParser.DIVIDE)
-            self.state = 189
-            self.match(Wuwuzela_GrammarParser.MULTIPLY)
+            _la = self._input.LA(1)
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << Wuwuzela_GrammarParser.PLUS) | (1 << Wuwuzela_GrammarParser.MINUS) | (1 << Wuwuzela_GrammarParser.MULTIPLY) | (1 << Wuwuzela_GrammarParser.DIVIDE))) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1638,7 +1636,7 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 191
+            self.state = 188
             _la = self._input.LA(1)
             if not(_la==Wuwuzela_GrammarParser.TRUE or _la==Wuwuzela_GrammarParser.FALSE):
                 self._errHandler.recoverInline(self)
