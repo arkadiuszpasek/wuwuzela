@@ -107,6 +107,7 @@ logicalExpression:
 | NOT logicalExpression 
 | LBRACKET logicalExpression RBRACKET
 | element  comparison element
+| VARIABLE
 ;
 
 andOr: 
