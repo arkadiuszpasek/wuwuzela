@@ -8,7 +8,5 @@ class WhileStatement():
         logical_expr = ctx.logicalExpression()
 
         while LogicalExpression(variables, logical_expr).value:
-            for i, declaration in enumerate(ctx.declaration()):
-                print("iterator: ", i)
-                print("declaration: ", declaration)
-                Declaration(self.variables, declaration)
+            for declaration in ctx.declaration():
+                Declaration(self, declaration)

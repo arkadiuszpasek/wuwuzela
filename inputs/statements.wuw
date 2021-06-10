@@ -3,19 +3,21 @@ music {
    if (5 > 3) {
     print("hehe..");
     print("lubie placki...");
-  }
+   }
 
-   if (4 >= 3) {
-    print("prin1..");
+  if (4 >= 3) {
+    print("print1..");
     print("print2...");
-  }
-
-  while (5 > 2) {
-    print("xd");
   }
 
   if (6 < 3) {
     print("6...<3..");
-    print("nie ma to jak dobrze wyprintowac..");
+    print("powinno sie nie printowac");
+  }
+
+  var i = 1;
+  while (i < 4) {
+    var i = i + 1;
+    print(i);
   }
 }

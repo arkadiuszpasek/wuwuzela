@@ -70,7 +70,7 @@ value:
     ;
 
 ifStatement:
- IF LBRACKET logicalExpression RBRACKET LBRACE (declaration)* RBRACE;
+ IF LBRACKET logicalExpression RBRACKET LBRACE declaration* RBRACE;
 
 varStatement:
      VAR VARIABLE ASSIGN varStatementContent SEMICOLON;
@@ -108,6 +108,7 @@ logicalExpression:
 | NOT logicalExpression 
 | LBRACKET logicalExpression RBRACKET
 | element  comparison element
+| VARIABLE
 ;
 
 andOr: 
