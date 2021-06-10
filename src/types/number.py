@@ -1,31 +1,51 @@
 from .variable import Variable
 
+
 class Number(Variable):
     value = None
+
     def __init__(self, input):
         self.value = float(str(input))
 
     def __str__(self):
-        return str(self.value)
+        return f"Number({self.value})"
 
     def add(self, value):
-        if (type(value) == Number):
-            return self.value + value.value
-        raise TypeError(f'Value of type ${type(value)} cannot be used in number.add')
+        # self._log_op(value, "+")
+
+        if type(value) == Number:
+            return Number(self.value + value.value)
+        if type(value) == float or type(value) == int:
+            return Number(self.value + value)
+        raise TypeError(f"Value of type ${type(value)} cannot be used in number.add")
 
     def sub(self, value):
+        # self._log_op(value, "-")
 
-        print('subbi')
-        if (type(value) == Number):
-            return self.value - value.value
-        raise TypeError(f'Value of type ${type(value)} cannot be used in number.sub')
+        if type(value) == Number:
+            return Number(self.value - value.value)
+        if type(value) == float or type(value) == int:
+            return Number(self.value - value)
+        raise TypeError(f"Value of type ${type(value)} cannot be used in number.sub")
 
     def mult(self, value):
-        if (type(value) == Number):
-            return self.value * value.value
-        raise TypeError(f'Value of type ${type(value)} cannot be used in number.mult')
+        # self._log_op(value, "*")
+
+        if type(value) == Number:
+            return Number(self.value * value.value)
+        if type(value) == float or type(value) == int:
+            return Number(self.value * value)
+        raise TypeError(f"Value of type ${type(value)} cannot be used in number.mult")
 
     def div(self, value):
-        if (type(value) == Number):
-            return self.value / value.value
-        raise TypeError(f'Value of type ${type(value)} cannot be used in number.div')
+        # self._log_op(value, "/")
+
+        if type(value) == Number:
+            return Number(self.value / value.value)
+        if type(value) == float or type(value) == int:
+            return Number(self.value / value)
+        raise TypeError(f"Value of type ${type(value)} cannot be used in number.div")
+
+    def _log_op(self, value, op):
+        print(f"Operation {op} -- {value} on self {self}")
+

@@ -1,27 +1,21 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from src.types.number import Number
 from .Element import Element
+from .AddComponent import AddComponent
 
-class Equation():
+
+class Equation:
     def __init__(self, variables, ctx: Wuwuzela_GrammarParser.EquationContext):
-        left = Element(variables, ctx.element(0))
-        right = Element(variables, ctx.element(1))
+        sign = -1 if ctx.MINUS() else 1
 
-        isLeftIncorrect = left.value == None or type(left.value) != Number
-        isRightIncorrect = right.value == None or type(right.value) != Number
-        if isLeftIncorrect and isRightIncorrect:
-            raise ValueError(
-                f'Incorrect values in equation {ctx.getText()}. Left {left.value},right {right.value}'
-            )
-
-        self.value = equate(left.value, right.value, ctx.mathOperation())
-
-def equate(left: Number, right: Number, ctx: Wuwuzela_GrammarParser.MathOperationContext):
-    if ctx.PLUS():
-        return left.add(right)
-    if ctx.MINUS():
-        return left.sub(right) # TODO: This doesn't work, but that's a problem with a grammar probably
-    if ctx.MULTIPLY():
-        return left.mult(right)
-    if ctx.DIVIDE():
-        return left.div(right)
+        value = AddComponent(variables, ctx.addComponent(0)).value.mult(sign)
+        for i, opeator in enumerate(ctx.addOperator()):
+            if opeator.MINUS():
+                value = value.sub(
+                    AddComponent(variables, ctx.addComponent(i + 1)).value
+                )
+            elif opeator.PLUS():
+                value = value.add(
+                    AddComponent(variables, ctx.addComponent(i + 1)).value
+                )
+        self.value = value
