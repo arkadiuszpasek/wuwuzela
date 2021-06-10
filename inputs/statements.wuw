@@ -1,8 +1,13 @@
 music {
-  print("Hello there");
 
    if (5 > 3) {
     print("hehe..");
+    print("lubie placki...");
+  }
+
+   if (4 >= 3) {
+    print("prin1..");
+    print("print2...");
   }
 
   while (5 > 2) {
@@ -11,5 +16,6 @@ music {
 
   if (6 < 3) {
     print("6...<3..");
+    print("nie ma to jak dobrze wyprintowac..");
   }
 }
