@@ -170,12 +170,57 @@ class Wuwuzela_GrammarListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by Wuwuzela_GrammarParser#addComponent.
+    def enterAddComponent(self, ctx:Wuwuzela_GrammarParser.AddComponentContext):
+        pass
+
+    # Exit a parse tree produced by Wuwuzela_GrammarParser#addComponent.
+    def exitAddComponent(self, ctx:Wuwuzela_GrammarParser.AddComponentContext):
+        pass
+
+
+    # Enter a parse tree produced by Wuwuzela_GrammarParser#mulFactor.
+    def enterMulFactor(self, ctx:Wuwuzela_GrammarParser.MulFactorContext):
+        pass
+
+    # Exit a parse tree produced by Wuwuzela_GrammarParser#mulFactor.
+    def exitMulFactor(self, ctx:Wuwuzela_GrammarParser.MulFactorContext):
+        pass
+
+
+    # Enter a parse tree produced by Wuwuzela_GrammarParser#bracketEquation.
+    def enterBracketEquation(self, ctx:Wuwuzela_GrammarParser.BracketEquationContext):
+        pass
+
+    # Exit a parse tree produced by Wuwuzela_GrammarParser#bracketEquation.
+    def exitBracketEquation(self, ctx:Wuwuzela_GrammarParser.BracketEquationContext):
+        pass
+
+
     # Enter a parse tree produced by Wuwuzela_GrammarParser#element.
     def enterElement(self, ctx:Wuwuzela_GrammarParser.ElementContext):
         pass
 
     # Exit a parse tree produced by Wuwuzela_GrammarParser#element.
     def exitElement(self, ctx:Wuwuzela_GrammarParser.ElementContext):
+        pass
+
+
+    # Enter a parse tree produced by Wuwuzela_GrammarParser#addOperator.
+    def enterAddOperator(self, ctx:Wuwuzela_GrammarParser.AddOperatorContext):
+        pass
+
+    # Exit a parse tree produced by Wuwuzela_GrammarParser#addOperator.
+    def exitAddOperator(self, ctx:Wuwuzela_GrammarParser.AddOperatorContext):
+        pass
+
+
+    # Enter a parse tree produced by Wuwuzela_GrammarParser#mulOperator.
+    def enterMulOperator(self, ctx:Wuwuzela_GrammarParser.MulOperatorContext):
+        pass
+
+    # Exit a parse tree produced by Wuwuzela_GrammarParser#mulOperator.
+    def exitMulOperator(self, ctx:Wuwuzela_GrammarParser.MulOperatorContext):
         pass
 
 

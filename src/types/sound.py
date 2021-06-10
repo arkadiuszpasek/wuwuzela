@@ -8,4 +8,4 @@ class Sound(Variable):
         self.value = str(input)  # TODO: Does that need validation?
 
     def __str__(self):
-        return self.value
+        return f"Sound({self.value})"

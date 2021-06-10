@@ -1,0 +1,59 @@
+music {
+  var x=12;
+
+  var y = -10;
+  var a = y + x;
+  print("y + x");
+  print(a);
+
+  print("Declared x with value");
+  print(x);
+
+  print();
+  print("-x+2");
+  print(-x+2);
+
+  print();
+  print("x+2");
+  print(x+2);
+  
+  print();
+  print("-x-12");
+  print(-x-12);
+  
+  print();
+  print("x*3");
+  print(x*3);
+
+  print();
+  print("x/4");
+  print(x/4);
+
+  print();
+  print("-x*1.5");
+  print(-x*1.5);
+
+  print();
+  print("-x/0.5");
+  print(-x/(-0.5));
+  
+  print();
+  print("-x/0.5");
+  print(-x/0.5);
+
+  print();
+  print("(-12+5)*4");
+  print((-12+5)*4);
+
+  print();
+  print("((7+3)*10)");
+  print((7+3)*10);
+
+  print();
+  print("(7+3*10)");
+  print(7+3*10);
+
+  print();
+  print("-x/0.5 + ((7+3)*10)");
+  print(-x/0.5 + ((7+3)*10));
+}
