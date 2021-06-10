@@ -4,9 +4,18 @@
 
 ### Generate python parser files
 
-`antlr4 -Dlanguage=Python3 Wuwuzela_Grammar.g4`
+Run
+
+```
+antlr4 -Dlanguage=Python3 Wuwuzela_Grammar.g4
+```
 
 inside `/grammar`, you can use `py3antlr4/bin/antlr-4.9.2-complete.jar` from this repo.
+
+```
+java -jar ../py3antlr4/bin/antlr-4.9.2-complete.jar -Dlanguage=Python3 Wuwuzela_Grammar.g4
+```
+
 Make sure generated files are inside `/grammar` directory
 
 ### Running program

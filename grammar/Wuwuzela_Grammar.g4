@@ -35,7 +35,7 @@ RBRACE: '}';
 
 SOUND: [A-G][#]*[b]*([-][1-6])?;
 KEY: [a-g][m];
-NUMBER: [-]?([0-9]+[.])?[0-9]+;
+NUMBER: ([0-9]+[.])?[0-9]+;
 TEMPO: [1-9][0-9]{1, 2};
 VARIABLE: [a-z_][a-zA-Z0-9_]*;
 COMMENT: '/*' .*? '*/' -> skip;
@@ -81,6 +81,7 @@ varStatementContent:
 | NUMBER 
 | logicalExpression 
 | containerStatement
+| equation
 ;
 
 containerStatement:
@@ -107,7 +108,6 @@ logicalExpression:
 | NOT logicalExpression 
 | LBRACKET logicalExpression RBRACKET
 | element  comparison element
-| VARIABLE
 ;
 
 andOr: 
@@ -124,10 +124,29 @@ comparison:
 ;
 
 equation: 
-    element mathOperation element;
+    MINUS? addComponent (addOperator addComponent)*;
+
+addComponent:
+    mulFactor (mulOperator mulFactor)*;
+
+mulFactor:
+    element
+    | bracketEquation
+    ;
+bracketEquation:
+    LBRACKET equation RBRACKET;
+
 element: 
     | VARIABLE
     | NUMBER
+    ;
+addOperator:
+    PLUS
+    | MINUS
+    ;
+mulOperator:
+    MULTIPLY
+    | DIVIDE
     ;
 
 mathOperation: 
