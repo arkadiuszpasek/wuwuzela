@@ -1,4 +1,5 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
+from src.expressions.Equation import Equation
 from src.types.sound import Sound
 from src.types.number import Number
 from src.types.container import Container
@@ -34,6 +35,9 @@ class VariableTracker():
         
         if ctx.logicalExpression():
             return LogicalExpression(self, ctx.logicalExpression())
+
+        if ctx.equation():
+            return Equation(self, ctx.equation()).value
 
         raise TypeError(f'Cannot assign to variable: {ctx.getText()}')
     

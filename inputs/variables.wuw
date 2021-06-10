@@ -1,6 +1,13 @@
 music {
   var x=12;
   var y=C#;
+
+  var a = 1;
+  var a = a + 1;
+  print(a);
+  var a = C;
+  print(a);
+
   var cont = [A#, B#, C];
 
   print(cont);

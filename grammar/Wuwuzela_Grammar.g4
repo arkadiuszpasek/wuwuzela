@@ -81,6 +81,7 @@ varStatementContent:
 | NUMBER 
 | logicalExpression 
 | containerStatement
+| equation
 ;
 
 containerStatement:
