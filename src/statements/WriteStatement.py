@@ -1,6 +1,6 @@
 from mingus.midi.midi_file_out import write_NoteContainer
 from mingus.midi.midi_file_out import write_Composition
-from mingus.midi.midi_file_out import write_Bar
+from mingus.midi.midi_file_out import write_Track
 
 
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
@@ -13,7 +13,4 @@ class WriteStatement:
         comp = Composition(variables, ctx.compositionStatement())
 
         s = String(ctx.STRING())
-        # write_NoteContainer(f'{s.value}', comp.nc)
-        print("XDD:")
-        print(comp.nc)
-        write_Bar("example6.mid", comp.nc)
+        write_Track("example6.mid", comp.nc)
