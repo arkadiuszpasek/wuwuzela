@@ -12,5 +12,6 @@ class Container(Variable):
 
         self.value = values
 
+
     def __str__(self):
         return '[' + ', '.join(list(map(lambda x: str(x), self.value))) + ']'

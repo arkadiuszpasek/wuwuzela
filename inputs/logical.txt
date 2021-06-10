@@ -1,12 +1,8 @@
 music {
-  var y = True;
-  print(y);
 
-  var x = 5 == 3;
-  print(x);
-
-  var z = 5 == 5;
-  print(z);
+  var t = True;
+  var w = t and False;
+  print(w);
 
   var c = not 5 == 5;
   print(c);
