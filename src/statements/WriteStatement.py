@@ -1,11 +1,14 @@
-from mingus.midi.midi_file_out import write_NoteContainer
-from mingus.midi.midi_file_out import write_Composition
 from mingus.midi.midi_file_out import write_Track
-
 
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from src.statements.CompositionStatement import Composition
 from src.types.string import String
+
+
+def validate_input_file_name(file_name: str):
+    splitted = file_name.split('.')
+    if len(splitted) != 2 or splitted[1] != 'mid':
+        raise RuntimeError('Failed to create file. File name must be specified with mid extension. e.g. "example.mid"')
 
 
 class WriteStatement:
@@ -14,4 +17,11 @@ class WriteStatement:
 
         s = String(ctx.STRING())
         s = s.value.replace('"', '')
+
+        try:
+            validate_input_file_name(s)
+        except RuntimeError as err:
+            print(err)
+            return
+
         write_Track(s, comp.nc)

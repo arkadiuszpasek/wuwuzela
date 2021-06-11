@@ -1,5 +1,5 @@
 music {
-  var cont =  [A, G#, A, G#, G, G#, C#-5, E-5, D#-5, C#-5, D#-5, C#-5, C-5, C#-5, E-5, G#-5,
+  var cont =  [A, G#, Ab, G#, G, G#, C#-5, E-5, D#-5, C#-5, D#-5, Cb-5, C-5, C#-5, E-5, G#-5,
                A, G#, A, G#, G, G#, C#-5, E-5, D#-5, C#-5, D#-5, C#-5, C-5, C#-5, E-5, G#-5];
-  write("testFile.mid", composition(cont));
+  write("testFile1.mid", composition(cont));
 }
