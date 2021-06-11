@@ -9,7 +9,7 @@ class Container(Variable):
 
         values = []
         for s in content.SOUND():
-            values.append(Sound(s))
+            values.append(Sound(s).value)
 
         self.value = values
 
