@@ -1,0 +1,30 @@
+music {
+
+  var cont =  [A, G#, B, Fb];
+  var i = 0;
+  while(i<3){
+    var i = i + 1;
+    add(C,cont);
+  }
+
+  var t = True;
+  if(t or False){
+    add(Db,cont);
+  }
+
+  if(5 > 10){
+    print("Should not print");
+    add(F,cont);
+  }
+
+  print(cont);
+  transpose(cont, am);
+  print(cont);
+
+  write("fullExample.mid", composition(cont), T100);
+
+  var x = 10;
+  print("-x/0.5 + ((7+3)*10)");
+  print(-x/0.5 + ((7+3)*10));
+
+}
