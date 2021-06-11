@@ -3,6 +3,7 @@ from mingus.midi.midi_file_out import write_Track
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
 from src.statements.CompositionStatement import Composition
 from src.types.string import String
+from src.types.tempo import Tempo
 
 
 def validate_input_file_name(file_name: str):
@@ -22,6 +23,11 @@ class WriteStatement:
             validate_input_file_name(s)
         except RuntimeError as err:
             print(err)
+            return
+        if ctx.TEMPO():
+            tempo = str(ctx.TEMPO())
+            number = int(tempo[1:])
+            write_Track(s, comp.nc, number)
             return
 
         write_Track(s, comp.nc)
