@@ -15,9 +15,10 @@ class Composition:
         if ctx.containerStatement():
             container = Container(ctx.containerStatement())
             for item in container.value:
-                self.nc.add_notes(str(item), NOTE_DURATION)
+                self.nc.add_notes(item, NOTE_DURATION)
 
         else:
             container = variables.get(str(ctx.VARIABLE()))
             for item in container.value:
-                self.nc.add_notes(str(item), NOTE_DURATION)
+                print(item)
+                self.nc.add_notes(item, NOTE_DURATION)
