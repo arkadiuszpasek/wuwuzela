@@ -58,7 +58,7 @@ statement :
     ;
 
 whileLoop:
- WHILE LBRACKET logicalExpression RBRACKET LBRACE declaration RBRACE;
+ WHILE LBRACKET logicalExpression RBRACKET LBRACE declaration* RBRACE;
 
 printStatement:
  PRINT LBRACKET value RBRACKET SEMICOLON;
@@ -70,7 +70,7 @@ value:
     ;
 
 ifStatement:
- IF LBRACKET logicalExpression RBRACKET LBRACE declaration RBRACE;
+ IF LBRACKET logicalExpression RBRACKET LBRACE declaration* RBRACE;
 
 varStatement:
      VAR VARIABLE ASSIGN varStatementContent SEMICOLON;
