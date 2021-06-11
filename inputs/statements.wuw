@@ -5,11 +5,6 @@ music {
     print("lubie placki...");
    }
 
-  if (4 >= 3) {
-    print("print1..");
-    print("print2...");
-  }
-
   if (6 < 3) {
     print("6...<3..");
     print("powinno sie nie printowac");
@@ -18,10 +13,13 @@ music {
   var i = 1;
   while (i < 4) {
     var i = i + 1;
+    print("iteracja petli while");
     print(i);
   }
 
   if (i > 3) {
+    var x = 2;
+    print(x);
     print(i);
   }
 }
