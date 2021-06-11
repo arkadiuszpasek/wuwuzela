@@ -1,4 +1,5 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
+from .AddSoundToContainerStatement import AddSoundToContainerStatement
 from .PrintStatement import PrintStatement
 from .IfStatement import IfStatement
 from .WhileStatement import WhileStatement
@@ -18,4 +19,6 @@ class Statement():
             WriteStatement(variables, ctx.write())
         elif ctx.transposeStatement():
             TransposeStatement(variables, ctx.transposeStatement())
+        elif ctx.addSoundToContainerStatement():
+            AddSoundToContainerStatement(variables, ctx.addSoundToContainerStatement())
         # TODO: finish the rest of statements

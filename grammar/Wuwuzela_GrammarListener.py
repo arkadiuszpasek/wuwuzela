@@ -89,6 +89,15 @@ class Wuwuzela_GrammarListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by Wuwuzela_GrammarParser#addSoundToContainerStatement.
+    def enterAddSoundToContainerStatement(self, ctx:Wuwuzela_GrammarParser.AddSoundToContainerStatementContext):
+        pass
+
+    # Exit a parse tree produced by Wuwuzela_GrammarParser#addSoundToContainerStatement.
+    def exitAddSoundToContainerStatement(self, ctx:Wuwuzela_GrammarParser.AddSoundToContainerStatementContext):
+        pass
+
+
     # Enter a parse tree produced by Wuwuzela_GrammarParser#containerStatement.
     def enterContainerStatement(self, ctx:Wuwuzela_GrammarParser.ContainerStatementContext):
         pass

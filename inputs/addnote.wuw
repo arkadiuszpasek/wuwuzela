@@ -1,0 +1,12 @@
+music {
+  var cont =  [C, D];
+
+  var i = 0;
+  while(i<3){
+    var i = i + 1;
+    add(A,cont);
+  }
+
+  print(cont);
+  write("addNoteTest.mid", composition(cont));
+}

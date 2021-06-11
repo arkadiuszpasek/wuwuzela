@@ -12,7 +12,8 @@ OR: 'or';
 WHILE: 'while';
 NOT: 'not';
 PRINT: 'print';
-TRANSPOSE: 'transpose'; 
+TRANSPOSE: 'transpose';
+ADD: 'add';
 
 ASSIGN: '=';
 SEMICOLON: ';';
@@ -54,6 +55,7 @@ statement :
     | printStatement
     | ifStatement
     | transposeStatement
+    | addSoundToContainerStatement
     | write
     ;
 
@@ -83,6 +85,9 @@ varStatementContent:
 | containerStatement
 | equation
 ;
+
+addSoundToContainerStatement:
+ ADD LBRACKET SOUND COMMA VARIABLE RBRACKET SEMICOLON;
 
 containerStatement:
  LSQUAREBRACKET containerContent  RSQUAREBRACKET;
