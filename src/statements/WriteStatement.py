@@ -13,4 +13,5 @@ class WriteStatement:
         comp = Composition(variables, ctx.compositionStatement())
 
         s = String(ctx.STRING())
+        print(s);
         write_Track("example6.mid", comp.nc)
