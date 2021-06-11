@@ -33,10 +33,10 @@ RSQUAREBRACKET: ']';
 LBRACE: '{';
 RBRACE: '}';
 
+TEMPO: [T][1-9][0-9][0-9];
 SOUND: [A-G][#]*[b]*([-][1-6])?;
 KEY: [a-g][m];
 NUMBER: ([0-9]+[.])?[0-9]+;
-TEMPO: [1-9][0-9]{1, 2};
 VARIABLE: [a-z_][a-zA-Z0-9_]*;
 COMMENT: '/*' .*? '*/' -> skip;
 STRING: '"'.*?'"';
