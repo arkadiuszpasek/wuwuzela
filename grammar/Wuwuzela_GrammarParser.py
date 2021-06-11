@@ -62,23 +62,23 @@ def serializedATN():
         buf.write("\3\2ml\3\2\2\2nq\3\2\2\2om\3\2\2\2op\3\2\2\2pr\3\2\2\2")
         buf.write("qo\3\2\2\2rs\7\"\2\2s\17\3\2\2\2tu\7\4\2\2uv\7\'\2\2v")
         buf.write("w\7\21\2\2wx\5\22\n\2xy\7\22\2\2y\21\3\2\2\2z\u0081\7")
-        buf.write("#\2\2{\u0081\7\'\2\2|\u0081\7%\2\2}\u0081\5 \21\2~\u0081")
+        buf.write("$\2\2{\u0081\7\'\2\2|\u0081\7&\2\2}\u0081\5 \21\2~\u0081")
         buf.write("\5\26\f\2\177\u0081\5&\24\2\u0080z\3\2\2\2\u0080{\3\2")
         buf.write("\2\2\u0080|\3\2\2\2\u0080}\3\2\2\2\u0080~\3\2\2\2\u0080")
         buf.write("\177\3\2\2\2\u0081\23\3\2\2\2\u0082\u0083\7\20\2\2\u0083")
-        buf.write("\u0084\7\35\2\2\u0084\u0085\7#\2\2\u0085\u0086\7\23\2")
+        buf.write("\u0084\7\35\2\2\u0084\u0085\7$\2\2\u0085\u0086\7\23\2")
         buf.write("\2\u0086\u0087\7\'\2\2\u0087\u0088\7\36\2\2\u0088\u0089")
         buf.write("\7\22\2\2\u0089\25\3\2\2\2\u008a\u008b\7\37\2\2\u008b")
         buf.write("\u008c\5\30\r\2\u008c\u008d\7 \2\2\u008d\27\3\2\2\2\u008e")
-        buf.write("\u008f\7#\2\2\u008f\u0091\7\23\2\2\u0090\u008e\3\2\2\2")
+        buf.write("\u008f\7$\2\2\u008f\u0091\7\23\2\2\u0090\u008e\3\2\2\2")
         buf.write("\u0091\u0094\3\2\2\2\u0092\u0090\3\2\2\2\u0092\u0093\3")
         buf.write("\2\2\2\u0093\u0095\3\2\2\2\u0094\u0092\3\2\2\2\u0095\u0096")
-        buf.write("\7#\2\2\u0096\31\3\2\2\2\u0097\u0098\7\17\2\2\u0098\u0099")
+        buf.write("\7$\2\2\u0096\31\3\2\2\2\u0097\u0098\7\17\2\2\u0098\u0099")
         buf.write("\7\35\2\2\u0099\u009a\5\26\f\2\u009a\u009b\7\23\2\2\u009b")
-        buf.write("\u009c\7$\2\2\u009c\u009d\7\36\2\2\u009d\u009e\7\22\2")
+        buf.write("\u009c\7%\2\2\u009c\u009d\7\36\2\2\u009d\u009e\7\22\2")
         buf.write("\2\u009e\u00a7\3\2\2\2\u009f\u00a0\7\17\2\2\u00a0\u00a1")
         buf.write("\7\35\2\2\u00a1\u00a2\7\'\2\2\u00a2\u00a3\7\23\2\2\u00a3")
-        buf.write("\u00a4\7$\2\2\u00a4\u00a5\7\36\2\2\u00a5\u00a7\7\22\2")
+        buf.write("\u00a4\7%\2\2\u00a4\u00a5\7\36\2\2\u00a5\u00a7\7\22\2")
         buf.write("\2\u00a6\u0097\3\2\2\2\u00a6\u009f\3\2\2\2\u00a7\33\3")
         buf.write("\2\2\2\u00a8\u00a9\7\6\2\2\u00a9\u00aa\7\35\2\2\u00aa")
         buf.write("\u00ab\5\26\f\2\u00ab\u00ac\7\36\2\2\u00ac\u00b2\3\2\2")
@@ -87,7 +87,7 @@ def serializedATN():
         buf.write("\u00ad\3\2\2\2\u00b2\35\3\2\2\2\u00b3\u00b4\7\7\2\2\u00b4")
         buf.write("\u00b5\7\35\2\2\u00b5\u00b6\7)\2\2\u00b6\u00b7\7\23\2")
         buf.write("\2\u00b7\u00ba\5\34\17\2\u00b8\u00b9\7\23\2\2\u00b9\u00bb")
-        buf.write("\7&\2\2\u00ba\u00b8\3\2\2\2\u00ba\u00bb\3\2\2\2\u00bb")
+        buf.write("\7#\2\2\u00ba\u00b8\3\2\2\2\u00ba\u00bb\3\2\2\2\u00bb")
         buf.write("\u00bc\3\2\2\2\u00bc\u00bd\7\36\2\2\u00bd\u00be\7\22\2")
         buf.write("\2\u00be\37\3\2\2\2\u00bf\u00c0\b\21\1\2\u00c0\u00d1\5")
         buf.write("\66\34\2\u00c1\u00c2\5&\24\2\u00c2\u00c3\5$\23\2\u00c3")
@@ -116,7 +116,7 @@ def serializedATN():
         buf.write("\u00f6\u00f5\3\2\2\2\u00f7+\3\2\2\2\u00f8\u00f9\7\35\2")
         buf.write("\2\u00f9\u00fa\5&\24\2\u00fa\u00fb\7\36\2\2\u00fb-\3\2")
         buf.write("\2\2\u00fc\u0100\3\2\2\2\u00fd\u0100\7\'\2\2\u00fe\u0100")
-        buf.write("\7%\2\2\u00ff\u00fc\3\2\2\2\u00ff\u00fd\3\2\2\2\u00ff")
+        buf.write("\7&\2\2\u00ff\u00fc\3\2\2\2\u00ff\u00fd\3\2\2\2\u00ff")
         buf.write("\u00fe\3\2\2\2\u0100/\3\2\2\2\u0101\u0102\t\4\2\2\u0102")
         buf.write("\61\3\2\2\2\u0103\u0104\t\5\2\2\u0104\63\3\2\2\2\u0105")
         buf.write("\u0106\t\6\2\2\u0106\65\3\2\2\2\u0107\u0108\t\7\2\2\u0108")
@@ -148,7 +148,7 @@ class Wuwuzela_GrammarParser ( Parser ):
                       "COMMA", "EQUAL", "GREATER", "GREATER_EQUAL", "LESS", 
                       "LESS_EQUAL", "PLUS", "MINUS", "MULTIPLY", "DIVIDE", 
                       "LBRACKET", "RBRACKET", "LSQUAREBRACKET", "RSQUAREBRACKET", 
-                      "LBRACE", "RBRACE", "SOUND", "KEY", "NUMBER", "TEMPO", 
+                      "LBRACE", "RBRACE", "TEMPO", "SOUND", "KEY", "NUMBER", 
                       "VARIABLE", "COMMENT", "STRING", "WS" ]
 
     RULE_musicProgram = 0
@@ -221,10 +221,10 @@ class Wuwuzela_GrammarParser ( Parser ):
     RSQUAREBRACKET=30
     LBRACE=31
     RBRACE=32
-    SOUND=33
-    KEY=34
-    NUMBER=35
-    TEMPO=36
+    TEMPO=33
+    SOUND=34
+    KEY=35
+    NUMBER=36
     VARIABLE=37
     COMMENT=38
     STRING=39
