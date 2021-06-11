@@ -12,7 +12,7 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3)")
-        buf.write("\u00f4\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u00ff\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
@@ -24,26 +24,27 @@ def serializedATN():
         buf.write("\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\n\3\n\3")
         buf.write("\n\5\n~\n\n\3\13\3\13\3\13\3\13\3\f\3\f\7\f\u0086\n\f")
         buf.write("\f\f\16\f\u0089\13\f\3\f\3\f\3\r\3\r\3\r\3\r\3\r\3\r\3")
-        buf.write("\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\5\16\u009c")
-        buf.write("\n\16\3\17\3\17\3\17\3\17\3\17\3\17\3\17\5\17\u00a5\n")
-        buf.write("\17\3\17\3\17\3\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20")
-        buf.write("\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\5\20")
-        buf.write("\u00bb\n\20\3\20\3\20\3\20\3\20\7\20\u00c1\n\20\f\20\16")
-        buf.write("\20\u00c4\13\20\3\21\3\21\3\22\3\22\3\23\5\23\u00cb\n")
-        buf.write("\23\3\23\3\23\3\23\3\23\7\23\u00d1\n\23\f\23\16\23\u00d4")
-        buf.write("\13\23\3\24\3\24\3\24\3\24\7\24\u00da\n\24\f\24\16\24")
-        buf.write("\u00dd\13\24\3\25\3\25\5\25\u00e1\n\25\3\26\3\26\3\26")
-        buf.write("\3\26\3\27\3\27\3\27\5\27\u00ea\n\27\3\30\3\30\3\31\3")
-        buf.write("\31\3\32\3\32\3\33\3\33\3\33\2\3\36\34\2\4\6\b\n\f\16")
-        buf.write("\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\2\b\3\2\n\13")
-        buf.write("\3\2\23\27\3\2\30\31\3\2\32\33\3\2\30\33\3\2\b\t\2\u00f8")
-        buf.write("\2\66\3\2\2\2\4B\3\2\2\2\6I\3\2\2\2\bK\3\2\2\2\nX\3\2")
-        buf.write("\2\2\fb\3\2\2\2\16d\3\2\2\2\20q\3\2\2\2\22}\3\2\2\2\24")
-        buf.write("\177\3\2\2\2\26\u0087\3\2\2\2\30\u008c\3\2\2\2\32\u009b")
-        buf.write("\3\2\2\2\34\u009d\3\2\2\2\36\u00ba\3\2\2\2 \u00c5\3\2")
-        buf.write("\2\2\"\u00c7\3\2\2\2$\u00ca\3\2\2\2&\u00d5\3\2\2\2(\u00e0")
-        buf.write("\3\2\2\2*\u00e2\3\2\2\2,\u00e9\3\2\2\2.\u00eb\3\2\2\2")
-        buf.write("\60\u00ed\3\2\2\2\62\u00ef\3\2\2\2\64\u00f1\3\2\2\2\66")
+        buf.write("\r\3\r\3\r\3\r\3\r\3\r\3\r\3\r\3\r\5\r\u009c\n\r\3\16")
+        buf.write("\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\5\16\u00a7\n")
+        buf.write("\16\3\17\3\17\3\17\3\17\3\17\3\17\3\17\5\17\u00b0\n\17")
+        buf.write("\3\17\3\17\3\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20")
+        buf.write("\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\5\20\u00c6")
+        buf.write("\n\20\3\20\3\20\3\20\3\20\7\20\u00cc\n\20\f\20\16\20\u00cf")
+        buf.write("\13\20\3\21\3\21\3\22\3\22\3\23\5\23\u00d6\n\23\3\23\3")
+        buf.write("\23\3\23\3\23\7\23\u00dc\n\23\f\23\16\23\u00df\13\23\3")
+        buf.write("\24\3\24\3\24\3\24\7\24\u00e5\n\24\f\24\16\24\u00e8\13")
+        buf.write("\24\3\25\3\25\5\25\u00ec\n\25\3\26\3\26\3\26\3\26\3\27")
+        buf.write("\3\27\3\27\5\27\u00f5\n\27\3\30\3\30\3\31\3\31\3\32\3")
+        buf.write("\32\3\33\3\33\3\33\2\3\36\34\2\4\6\b\n\f\16\20\22\24\26")
+        buf.write("\30\32\34\36 \"$&(*,.\60\62\64\2\b\3\2\n\13\3\2\23\27")
+        buf.write("\3\2\30\31\3\2\32\33\3\2\30\33\3\2\b\t\2\u0104\2\66\3")
+        buf.write("\2\2\2\4B\3\2\2\2\6I\3\2\2\2\bK\3\2\2\2\nX\3\2\2\2\fb")
+        buf.write("\3\2\2\2\16d\3\2\2\2\20q\3\2\2\2\22}\3\2\2\2\24\177\3")
+        buf.write("\2\2\2\26\u0087\3\2\2\2\30\u009b\3\2\2\2\32\u00a6\3\2")
+        buf.write("\2\2\34\u00a8\3\2\2\2\36\u00c5\3\2\2\2 \u00d0\3\2\2\2")
+        buf.write("\"\u00d2\3\2\2\2$\u00d5\3\2\2\2&\u00e0\3\2\2\2(\u00eb")
+        buf.write("\3\2\2\2*\u00ed\3\2\2\2,\u00f4\3\2\2\2.\u00f6\3\2\2\2")
+        buf.write("\60\u00f8\3\2\2\2\62\u00fa\3\2\2\2\64\u00fc\3\2\2\2\66")
         buf.write("\67\7\3\2\2\67;\7 \2\28:\5\4\3\298\3\2\2\2:=\3\2\2\2;")
         buf.write("9\3\2\2\2;<\3\2\2\2<>\3\2\2\2=;\3\2\2\2>?\7!\2\2?\3\3")
         buf.write("\2\2\2@C\5\6\4\2AC\5\20\t\2B@\3\2\2\2BA\3\2\2\2C\5\3\2")
@@ -67,49 +68,54 @@ def serializedATN():
         buf.write("\3\2\2\2\u0087\u0085\3\2\2\2\u0087\u0088\3\2\2\2\u0088")
         buf.write("\u008a\3\2\2\2\u0089\u0087\3\2\2\2\u008a\u008b\7\"\2\2")
         buf.write("\u008b\27\3\2\2\2\u008c\u008d\7\17\2\2\u008d\u008e\7\34")
-        buf.write("\2\2\u008e\u008f\7#\2\2\u008f\u0090\7\35\2\2\u0090\u0091")
-        buf.write("\7\21\2\2\u0091\31\3\2\2\2\u0092\u0093\7\6\2\2\u0093\u0094")
-        buf.write("\7\34\2\2\u0094\u0095\5\24\13\2\u0095\u0096\7\35\2\2\u0096")
-        buf.write("\u009c\3\2\2\2\u0097\u0098\7\6\2\2\u0098\u0099\7\34\2")
-        buf.write("\2\u0099\u009a\7&\2\2\u009a\u009c\7\35\2\2\u009b\u0092")
-        buf.write("\3\2\2\2\u009b\u0097\3\2\2\2\u009c\33\3\2\2\2\u009d\u009e")
-        buf.write("\7\7\2\2\u009e\u009f\7\34\2\2\u009f\u00a0\7(\2\2\u00a0")
-        buf.write("\u00a1\7\22\2\2\u00a1\u00a4\5\32\16\2\u00a2\u00a3\7\22")
-        buf.write("\2\2\u00a3\u00a5\7%\2\2\u00a4\u00a2\3\2\2\2\u00a4\u00a5")
-        buf.write("\3\2\2\2\u00a5\u00a6\3\2\2\2\u00a6\u00a7\7\35\2\2\u00a7")
-        buf.write("\u00a8\7\21\2\2\u00a8\35\3\2\2\2\u00a9\u00aa\b\20\1\2")
-        buf.write("\u00aa\u00bb\5\64\33\2\u00ab\u00ac\5$\23\2\u00ac\u00ad")
-        buf.write("\5\"\22\2\u00ad\u00ae\5$\23\2\u00ae\u00bb\3\2\2\2\u00af")
-        buf.write("\u00b0\7\r\2\2\u00b0\u00bb\5\36\20\6\u00b1\u00b2\7\34")
-        buf.write("\2\2\u00b2\u00b3\5\36\20\2\u00b3\u00b4\7\35\2\2\u00b4")
-        buf.write("\u00bb\3\2\2\2\u00b5\u00b6\5,\27\2\u00b6\u00b7\5\"\22")
-        buf.write("\2\u00b7\u00b8\5,\27\2\u00b8\u00bb\3\2\2\2\u00b9\u00bb")
-        buf.write("\7&\2\2\u00ba\u00a9\3\2\2\2\u00ba\u00ab\3\2\2\2\u00ba")
-        buf.write("\u00af\3\2\2\2\u00ba\u00b1\3\2\2\2\u00ba\u00b5\3\2\2\2")
-        buf.write("\u00ba\u00b9\3\2\2\2\u00bb\u00c2\3\2\2\2\u00bc\u00bd\f")
-        buf.write("\b\2\2\u00bd\u00be\5 \21\2\u00be\u00bf\5\36\20\t\u00bf")
-        buf.write("\u00c1\3\2\2\2\u00c0\u00bc\3\2\2\2\u00c1\u00c4\3\2\2\2")
-        buf.write("\u00c2\u00c0\3\2\2\2\u00c2\u00c3\3\2\2\2\u00c3\37\3\2")
-        buf.write("\2\2\u00c4\u00c2\3\2\2\2\u00c5\u00c6\t\2\2\2\u00c6!\3")
-        buf.write("\2\2\2\u00c7\u00c8\t\3\2\2\u00c8#\3\2\2\2\u00c9\u00cb")
-        buf.write("\7\31\2\2\u00ca\u00c9\3\2\2\2\u00ca\u00cb\3\2\2\2\u00cb")
-        buf.write("\u00cc\3\2\2\2\u00cc\u00d2\5&\24\2\u00cd\u00ce\5.\30\2")
-        buf.write("\u00ce\u00cf\5&\24\2\u00cf\u00d1\3\2\2\2\u00d0\u00cd\3")
-        buf.write("\2\2\2\u00d1\u00d4\3\2\2\2\u00d2\u00d0\3\2\2\2\u00d2\u00d3")
-        buf.write("\3\2\2\2\u00d3%\3\2\2\2\u00d4\u00d2\3\2\2\2\u00d5\u00db")
-        buf.write("\5(\25\2\u00d6\u00d7\5\60\31\2\u00d7\u00d8\5(\25\2\u00d8")
-        buf.write("\u00da\3\2\2\2\u00d9\u00d6\3\2\2\2\u00da\u00dd\3\2\2\2")
-        buf.write("\u00db\u00d9\3\2\2\2\u00db\u00dc\3\2\2\2\u00dc\'\3\2\2")
-        buf.write("\2\u00dd\u00db\3\2\2\2\u00de\u00e1\5,\27\2\u00df\u00e1")
-        buf.write("\5*\26\2\u00e0\u00de\3\2\2\2\u00e0\u00df\3\2\2\2\u00e1")
-        buf.write(")\3\2\2\2\u00e2\u00e3\7\34\2\2\u00e3\u00e4\5$\23\2\u00e4")
-        buf.write("\u00e5\7\35\2\2\u00e5+\3\2\2\2\u00e6\u00ea\3\2\2\2\u00e7")
-        buf.write("\u00ea\7&\2\2\u00e8\u00ea\7$\2\2\u00e9\u00e6\3\2\2\2\u00e9")
-        buf.write("\u00e7\3\2\2\2\u00e9\u00e8\3\2\2\2\u00ea-\3\2\2\2\u00eb")
-        buf.write("\u00ec\t\4\2\2\u00ec/\3\2\2\2\u00ed\u00ee\t\5\2\2\u00ee")
-        buf.write("\61\3\2\2\2\u00ef\u00f0\t\6\2\2\u00f0\63\3\2\2\2\u00f1")
-        buf.write("\u00f2\t\7\2\2\u00f2\65\3\2\2\2\23;BISbl}\u0087\u009b")
-        buf.write("\u00a4\u00ba\u00c2\u00ca\u00d2\u00db\u00e0\u00e9")
+        buf.write("\2\2\u008e\u008f\5\24\13\2\u008f\u0090\7\22\2\2\u0090")
+        buf.write("\u0091\7#\2\2\u0091\u0092\7\35\2\2\u0092\u0093\7\21\2")
+        buf.write("\2\u0093\u009c\3\2\2\2\u0094\u0095\7\17\2\2\u0095\u0096")
+        buf.write("\7\34\2\2\u0096\u0097\7&\2\2\u0097\u0098\7\22\2\2\u0098")
+        buf.write("\u0099\7#\2\2\u0099\u009a\7\35\2\2\u009a\u009c\7\21\2")
+        buf.write("\2\u009b\u008c\3\2\2\2\u009b\u0094\3\2\2\2\u009c\31\3")
+        buf.write("\2\2\2\u009d\u009e\7\6\2\2\u009e\u009f\7\34\2\2\u009f")
+        buf.write("\u00a0\5\24\13\2\u00a0\u00a1\7\35\2\2\u00a1\u00a7\3\2")
+        buf.write("\2\2\u00a2\u00a3\7\6\2\2\u00a3\u00a4\7\34\2\2\u00a4\u00a5")
+        buf.write("\7&\2\2\u00a5\u00a7\7\35\2\2\u00a6\u009d\3\2\2\2\u00a6")
+        buf.write("\u00a2\3\2\2\2\u00a7\33\3\2\2\2\u00a8\u00a9\7\7\2\2\u00a9")
+        buf.write("\u00aa\7\34\2\2\u00aa\u00ab\7(\2\2\u00ab\u00ac\7\22\2")
+        buf.write("\2\u00ac\u00af\5\32\16\2\u00ad\u00ae\7\22\2\2\u00ae\u00b0")
+        buf.write("\7%\2\2\u00af\u00ad\3\2\2\2\u00af\u00b0\3\2\2\2\u00b0")
+        buf.write("\u00b1\3\2\2\2\u00b1\u00b2\7\35\2\2\u00b2\u00b3\7\21\2")
+        buf.write("\2\u00b3\35\3\2\2\2\u00b4\u00b5\b\20\1\2\u00b5\u00c6\5")
+        buf.write("\64\33\2\u00b6\u00b7\5$\23\2\u00b7\u00b8\5\"\22\2\u00b8")
+        buf.write("\u00b9\5$\23\2\u00b9\u00c6\3\2\2\2\u00ba\u00bb\7\r\2\2")
+        buf.write("\u00bb\u00c6\5\36\20\6\u00bc\u00bd\7\34\2\2\u00bd\u00be")
+        buf.write("\5\36\20\2\u00be\u00bf\7\35\2\2\u00bf\u00c6\3\2\2\2\u00c0")
+        buf.write("\u00c1\5,\27\2\u00c1\u00c2\5\"\22\2\u00c2\u00c3\5,\27")
+        buf.write("\2\u00c3\u00c6\3\2\2\2\u00c4\u00c6\7&\2\2\u00c5\u00b4")
+        buf.write("\3\2\2\2\u00c5\u00b6\3\2\2\2\u00c5\u00ba\3\2\2\2\u00c5")
+        buf.write("\u00bc\3\2\2\2\u00c5\u00c0\3\2\2\2\u00c5\u00c4\3\2\2\2")
+        buf.write("\u00c6\u00cd\3\2\2\2\u00c7\u00c8\f\b\2\2\u00c8\u00c9\5")
+        buf.write(" \21\2\u00c9\u00ca\5\36\20\t\u00ca\u00cc\3\2\2\2\u00cb")
+        buf.write("\u00c7\3\2\2\2\u00cc\u00cf\3\2\2\2\u00cd\u00cb\3\2\2\2")
+        buf.write("\u00cd\u00ce\3\2\2\2\u00ce\37\3\2\2\2\u00cf\u00cd\3\2")
+        buf.write("\2\2\u00d0\u00d1\t\2\2\2\u00d1!\3\2\2\2\u00d2\u00d3\t")
+        buf.write("\3\2\2\u00d3#\3\2\2\2\u00d4\u00d6\7\31\2\2\u00d5\u00d4")
+        buf.write("\3\2\2\2\u00d5\u00d6\3\2\2\2\u00d6\u00d7\3\2\2\2\u00d7")
+        buf.write("\u00dd\5&\24\2\u00d8\u00d9\5.\30\2\u00d9\u00da\5&\24\2")
+        buf.write("\u00da\u00dc\3\2\2\2\u00db\u00d8\3\2\2\2\u00dc\u00df\3")
+        buf.write("\2\2\2\u00dd\u00db\3\2\2\2\u00dd\u00de\3\2\2\2\u00de%")
+        buf.write("\3\2\2\2\u00df\u00dd\3\2\2\2\u00e0\u00e6\5(\25\2\u00e1")
+        buf.write("\u00e2\5\60\31\2\u00e2\u00e3\5(\25\2\u00e3\u00e5\3\2\2")
+        buf.write("\2\u00e4\u00e1\3\2\2\2\u00e5\u00e8\3\2\2\2\u00e6\u00e4")
+        buf.write("\3\2\2\2\u00e6\u00e7\3\2\2\2\u00e7\'\3\2\2\2\u00e8\u00e6")
+        buf.write("\3\2\2\2\u00e9\u00ec\5,\27\2\u00ea\u00ec\5*\26\2\u00eb")
+        buf.write("\u00e9\3\2\2\2\u00eb\u00ea\3\2\2\2\u00ec)\3\2\2\2\u00ed")
+        buf.write("\u00ee\7\34\2\2\u00ee\u00ef\5$\23\2\u00ef\u00f0\7\35\2")
+        buf.write("\2\u00f0+\3\2\2\2\u00f1\u00f5\3\2\2\2\u00f2\u00f5\7&\2")
+        buf.write("\2\u00f3\u00f5\7$\2\2\u00f4\u00f1\3\2\2\2\u00f4\u00f2")
+        buf.write("\3\2\2\2\u00f4\u00f3\3\2\2\2\u00f5-\3\2\2\2\u00f6\u00f7")
+        buf.write("\t\4\2\2\u00f7/\3\2\2\2\u00f8\u00f9\t\5\2\2\u00f9\61\3")
+        buf.write("\2\2\2\u00fa\u00fb\t\6\2\2\u00fb\63\3\2\2\2\u00fc\u00fd")
+        buf.write("\t\7\2\2\u00fd\65\3\2\2\2\24;BISbl}\u0087\u009b\u00a6")
+        buf.write("\u00af\u00c5\u00cd\u00d5\u00dd\u00e6\u00eb\u00f4")
         return buf.getvalue()
 
 
@@ -1027,6 +1033,13 @@ class Wuwuzela_GrammarParser ( Parser ):
         def LBRACKET(self):
             return self.getToken(Wuwuzela_GrammarParser.LBRACKET, 0)
 
+        def containerStatement(self):
+            return self.getTypedRuleContext(Wuwuzela_GrammarParser.ContainerStatementContext,0)
+
+
+        def COMMA(self):
+            return self.getToken(Wuwuzela_GrammarParser.COMMA, 0)
+
         def KEY(self):
             return self.getToken(Wuwuzela_GrammarParser.KEY, 0)
 
@@ -1035,6 +1048,9 @@ class Wuwuzela_GrammarParser ( Parser ):
 
         def SEMICOLON(self):
             return self.getToken(Wuwuzela_GrammarParser.SEMICOLON, 0)
+
+        def VARIABLE(self):
+            return self.getToken(Wuwuzela_GrammarParser.VARIABLE, 0)
 
         def getRuleIndex(self):
             return Wuwuzela_GrammarParser.RULE_transposeStatement
@@ -1055,17 +1071,46 @@ class Wuwuzela_GrammarParser ( Parser ):
         localctx = Wuwuzela_GrammarParser.TransposeStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_transposeStatement)
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 138
-            self.match(Wuwuzela_GrammarParser.TRANSPOSE)
-            self.state = 139
-            self.match(Wuwuzela_GrammarParser.LBRACKET)
-            self.state = 140
-            self.match(Wuwuzela_GrammarParser.KEY)
-            self.state = 141
-            self.match(Wuwuzela_GrammarParser.RBRACKET)
-            self.state = 142
-            self.match(Wuwuzela_GrammarParser.SEMICOLON)
+            self.state = 153
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 138
+                self.match(Wuwuzela_GrammarParser.TRANSPOSE)
+                self.state = 139
+                self.match(Wuwuzela_GrammarParser.LBRACKET)
+                self.state = 140
+                self.containerStatement()
+                self.state = 141
+                self.match(Wuwuzela_GrammarParser.COMMA)
+                self.state = 142
+                self.match(Wuwuzela_GrammarParser.KEY)
+                self.state = 143
+                self.match(Wuwuzela_GrammarParser.RBRACKET)
+                self.state = 144
+                self.match(Wuwuzela_GrammarParser.SEMICOLON)
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 146
+                self.match(Wuwuzela_GrammarParser.TRANSPOSE)
+                self.state = 147
+                self.match(Wuwuzela_GrammarParser.LBRACKET)
+                self.state = 148
+                self.match(Wuwuzela_GrammarParser.VARIABLE)
+                self.state = 149
+                self.match(Wuwuzela_GrammarParser.COMMA)
+                self.state = 150
+                self.match(Wuwuzela_GrammarParser.KEY)
+                self.state = 151
+                self.match(Wuwuzela_GrammarParser.RBRACKET)
+                self.state = 152
+                self.match(Wuwuzela_GrammarParser.SEMICOLON)
+                pass
+
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1117,30 +1162,30 @@ class Wuwuzela_GrammarParser ( Parser ):
         localctx = Wuwuzela_GrammarParser.CompositionStatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_compositionStatement)
         try:
-            self.state = 153
+            self.state = 164
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 144
+                self.state = 155
                 self.match(Wuwuzela_GrammarParser.COMPOSITION)
-                self.state = 145
+                self.state = 156
                 self.match(Wuwuzela_GrammarParser.LBRACKET)
-                self.state = 146
+                self.state = 157
                 self.containerStatement()
-                self.state = 147
+                self.state = 158
                 self.match(Wuwuzela_GrammarParser.RBRACKET)
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 149
+                self.state = 160
                 self.match(Wuwuzela_GrammarParser.COMPOSITION)
-                self.state = 150
+                self.state = 161
                 self.match(Wuwuzela_GrammarParser.LBRACKET)
-                self.state = 151
+                self.state = 162
                 self.match(Wuwuzela_GrammarParser.VARIABLE)
-                self.state = 152
+                self.state = 163
                 self.match(Wuwuzela_GrammarParser.RBRACKET)
                 pass
 
@@ -1210,29 +1255,29 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 155
+            self.state = 166
             self.match(Wuwuzela_GrammarParser.WRITE)
-            self.state = 156
+            self.state = 167
             self.match(Wuwuzela_GrammarParser.LBRACKET)
-            self.state = 157
+            self.state = 168
             self.match(Wuwuzela_GrammarParser.STRING)
-            self.state = 158
+            self.state = 169
             self.match(Wuwuzela_GrammarParser.COMMA)
-            self.state = 159
+            self.state = 170
             self.compositionStatement()
-            self.state = 162
+            self.state = 173
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==Wuwuzela_GrammarParser.COMMA:
-                self.state = 160
+                self.state = 171
                 self.match(Wuwuzela_GrammarParser.COMMA)
-                self.state = 161
+                self.state = 172
                 self.match(Wuwuzela_GrammarParser.TEMPO)
 
 
-            self.state = 164
+            self.state = 175
             self.match(Wuwuzela_GrammarParser.RBRACKET)
-            self.state = 165
+            self.state = 176
             self.match(Wuwuzela_GrammarParser.SEMICOLON)
         except RecognitionException as re:
             localctx.exception = re
@@ -1317,58 +1362,58 @@ class Wuwuzela_GrammarParser ( Parser ):
         self.enterRecursionRule(localctx, 28, self.RULE_logicalExpression, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 184
+            self.state = 195
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
             if la_ == 1:
-                self.state = 168
+                self.state = 179
                 self.trueFalse()
                 pass
 
             elif la_ == 2:
-                self.state = 169
+                self.state = 180
                 self.equation()
-                self.state = 170
+                self.state = 181
                 self.comparison()
-                self.state = 171
+                self.state = 182
                 self.equation()
                 pass
 
             elif la_ == 3:
-                self.state = 173
+                self.state = 184
                 self.match(Wuwuzela_GrammarParser.NOT)
-                self.state = 174
+                self.state = 185
                 self.logicalExpression(4)
                 pass
 
             elif la_ == 4:
-                self.state = 175
+                self.state = 186
                 self.match(Wuwuzela_GrammarParser.LBRACKET)
-                self.state = 176
+                self.state = 187
                 self.logicalExpression(0)
-                self.state = 177
+                self.state = 188
                 self.match(Wuwuzela_GrammarParser.RBRACKET)
                 pass
 
             elif la_ == 5:
-                self.state = 179
+                self.state = 190
                 self.element()
-                self.state = 180
+                self.state = 191
                 self.comparison()
-                self.state = 181
+                self.state = 192
                 self.element()
                 pass
 
             elif la_ == 6:
-                self.state = 183
+                self.state = 194
                 self.match(Wuwuzela_GrammarParser.VARIABLE)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 192
+            self.state = 203
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,12,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -1376,17 +1421,17 @@ class Wuwuzela_GrammarParser ( Parser ):
                     _prevctx = localctx
                     localctx = Wuwuzela_GrammarParser.LogicalExpressionContext(self, _parentctx, _parentState)
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_logicalExpression)
-                    self.state = 186
+                    self.state = 197
                     if not self.precpred(self._ctx, 6):
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
-                    self.state = 187
+                    self.state = 198
                     self.andOr()
-                    self.state = 188
+                    self.state = 199
                     self.logicalExpression(7) 
-                self.state = 194
+                self.state = 205
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,12,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1431,7 +1476,7 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 195
+            self.state = 206
             _la = self._input.LA(1)
             if not(_la==Wuwuzela_GrammarParser.AND or _la==Wuwuzela_GrammarParser.OR):
                 self._errHandler.recoverInline(self)
@@ -1490,7 +1535,7 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 197
+            self.state = 208
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << Wuwuzela_GrammarParser.EQUAL) | (1 << Wuwuzela_GrammarParser.GREATER) | (1 << Wuwuzela_GrammarParser.GREATER_EQUAL) | (1 << Wuwuzela_GrammarParser.LESS) | (1 << Wuwuzela_GrammarParser.LESS_EQUAL))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1550,28 +1595,28 @@ class Wuwuzela_GrammarParser ( Parser ):
         self.enterRule(localctx, 34, self.RULE_equation)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 200
+            self.state = 211
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
             if la_ == 1:
-                self.state = 199
+                self.state = 210
                 self.match(Wuwuzela_GrammarParser.MINUS)
 
 
-            self.state = 202
+            self.state = 213
             self.addComponent()
-            self.state = 208
+            self.state = 219
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,13,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 203
+                    self.state = 214
                     self.addOperator()
-                    self.state = 204
+                    self.state = 215
                     self.addComponent() 
-                self.state = 210
+                self.state = 221
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,13,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1623,20 +1668,20 @@ class Wuwuzela_GrammarParser ( Parser ):
         self.enterRule(localctx, 36, self.RULE_addComponent)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 211
+            self.state = 222
             self.mulFactor()
-            self.state = 217
+            self.state = 228
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,15,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 212
+                    self.state = 223
                     self.mulOperator()
-                    self.state = 213
+                    self.state = 224
                     self.mulFactor() 
-                self.state = 219
+                self.state = 230
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,15,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1681,18 +1726,18 @@ class Wuwuzela_GrammarParser ( Parser ):
         localctx = Wuwuzela_GrammarParser.MulFactorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 38, self.RULE_mulFactor)
         try:
-            self.state = 222
+            self.state = 233
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,15,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,16,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 220
+                self.state = 231
                 self.element()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 221
+                self.state = 232
                 self.bracketEquation()
                 pass
 
@@ -1743,11 +1788,11 @@ class Wuwuzela_GrammarParser ( Parser ):
         self.enterRule(localctx, 40, self.RULE_bracketEquation)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 224
+            self.state = 235
             self.match(Wuwuzela_GrammarParser.LBRACKET)
-            self.state = 225
+            self.state = 236
             self.equation()
-            self.state = 226
+            self.state = 237
             self.match(Wuwuzela_GrammarParser.RBRACKET)
         except RecognitionException as re:
             localctx.exception = re
@@ -1790,9 +1835,9 @@ class Wuwuzela_GrammarParser ( Parser ):
         localctx = Wuwuzela_GrammarParser.ElementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 42, self.RULE_element)
         try:
-            self.state = 231
+            self.state = 242
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,16,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,17,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
 
@@ -1800,13 +1845,13 @@ class Wuwuzela_GrammarParser ( Parser ):
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 229
+                self.state = 240
                 self.match(Wuwuzela_GrammarParser.VARIABLE)
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 230
+                self.state = 241
                 self.match(Wuwuzela_GrammarParser.NUMBER)
                 pass
 
@@ -1854,7 +1899,7 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 233
+            self.state = 244
             _la = self._input.LA(1)
             if not(_la==Wuwuzela_GrammarParser.PLUS or _la==Wuwuzela_GrammarParser.MINUS):
                 self._errHandler.recoverInline(self)
@@ -1904,7 +1949,7 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 235
+            self.state = 246
             _la = self._input.LA(1)
             if not(_la==Wuwuzela_GrammarParser.MULTIPLY or _la==Wuwuzela_GrammarParser.DIVIDE):
                 self._errHandler.recoverInline(self)
@@ -1960,7 +2005,7 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 237
+            self.state = 248
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << Wuwuzela_GrammarParser.PLUS) | (1 << Wuwuzela_GrammarParser.MINUS) | (1 << Wuwuzela_GrammarParser.MULTIPLY) | (1 << Wuwuzela_GrammarParser.DIVIDE))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -2010,7 +2055,7 @@ class Wuwuzela_GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 239
+            self.state = 250
             _la = self._input.LA(1)
             if not(_la==Wuwuzela_GrammarParser.TRUE or _la==Wuwuzela_GrammarParser.FALSE):
                 self._errHandler.recoverInline(self)

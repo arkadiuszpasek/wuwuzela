@@ -3,6 +3,7 @@ from .PrintStatement import PrintStatement
 from .IfStatement import IfStatement
 from .WhileStatement import WhileStatement
 from .WriteStatement import WriteStatement
+from .TransposeStatement import TransposeStatement
 
 
 class Statement():
@@ -15,4 +16,6 @@ class Statement():
             WhileStatement(variables, ctx.whileLoop())
         elif ctx.write():
             WriteStatement(variables, ctx.write())
+        elif ctx.transposeStatement():
+            TransposeStatement(variables, ctx.transposeStatement())
         # TODO: finish the rest of statements
