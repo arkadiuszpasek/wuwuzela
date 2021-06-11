@@ -1,6 +1,4 @@
 from grammar.Wuwuzela_GrammarParser import Wuwuzela_GrammarParser
-from mingus.containers import NoteContainer
-from mingus.containers import Composition as Composition_Mingus
 from mingus.containers import Bar, Track
 
 from src.types.container import Container
@@ -20,5 +18,4 @@ class Composition:
         else:
             container = variables.get(str(ctx.VARIABLE()))
             for item in container.value:
-                print(item)
                 self.nc.add_notes(item, NOTE_DURATION)
