@@ -58,24 +58,24 @@ def serializedATN():
         buf.write("\2\2ef\7\34\2\2fg\5\36\20\2gh\7\35\2\2hl\7 \2\2ik\5\4")
         buf.write("\3\2ji\3\2\2\2kn\3\2\2\2lj\3\2\2\2lm\3\2\2\2mo\3\2\2\2")
         buf.write("nl\3\2\2\2op\7!\2\2p\17\3\2\2\2qr\7\4\2\2rs\7&\2\2st\7")
-        buf.write("\20\2\2tu\5\22\n\2uv\7\21\2\2v\21\3\2\2\2w~\7\"\2\2x~")
-        buf.write("\7&\2\2y~\7$\2\2z~\5\36\20\2{~\5\24\13\2|~\5$\23\2}w\3")
-        buf.write("\2\2\2}x\3\2\2\2}y\3\2\2\2}z\3\2\2\2}{\3\2\2\2}|\3\2\2")
-        buf.write("\2~\23\3\2\2\2\177\u0080\7\36\2\2\u0080\u0081\5\26\f\2")
-        buf.write("\u0081\u0082\7\37\2\2\u0082\25\3\2\2\2\u0083\u0084\7\"")
-        buf.write("\2\2\u0084\u0086\7\22\2\2\u0085\u0083\3\2\2\2\u0086\u0089")
-        buf.write("\3\2\2\2\u0087\u0085\3\2\2\2\u0087\u0088\3\2\2\2\u0088")
-        buf.write("\u008a\3\2\2\2\u0089\u0087\3\2\2\2\u008a\u008b\7\"\2\2")
-        buf.write("\u008b\27\3\2\2\2\u008c\u008d\7\17\2\2\u008d\u008e\7\34")
-        buf.write("\2\2\u008e\u008f\7#\2\2\u008f\u0090\7\35\2\2\u0090\u0091")
-        buf.write("\7\21\2\2\u0091\31\3\2\2\2\u0092\u0093\7\6\2\2\u0093\u0094")
+        buf.write("\20\2\2tu\5\22\n\2uv\7\21\2\2v\21\3\2\2\2w~\7#\2\2x~\7")
+        buf.write("&\2\2y~\7%\2\2z~\5\36\20\2{~\5\24\13\2|~\5$\23\2}w\3\2")
+        buf.write("\2\2}x\3\2\2\2}y\3\2\2\2}z\3\2\2\2}{\3\2\2\2}|\3\2\2\2")
+        buf.write("~\23\3\2\2\2\177\u0080\7\36\2\2\u0080\u0081\5\26\f\2\u0081")
+        buf.write("\u0082\7\37\2\2\u0082\25\3\2\2\2\u0083\u0084\7#\2\2\u0084")
+        buf.write("\u0086\7\22\2\2\u0085\u0083\3\2\2\2\u0086\u0089\3\2\2")
+        buf.write("\2\u0087\u0085\3\2\2\2\u0087\u0088\3\2\2\2\u0088\u008a")
+        buf.write("\3\2\2\2\u0089\u0087\3\2\2\2\u008a\u008b\7#\2\2\u008b")
+        buf.write("\27\3\2\2\2\u008c\u008d\7\17\2\2\u008d\u008e\7\34\2\2")
+        buf.write("\u008e\u008f\7$\2\2\u008f\u0090\7\35\2\2\u0090\u0091\7")
+        buf.write("\21\2\2\u0091\31\3\2\2\2\u0092\u0093\7\6\2\2\u0093\u0094")
         buf.write("\7\34\2\2\u0094\u0095\5\24\13\2\u0095\u0096\7\35\2\2\u0096")
         buf.write("\u009c\3\2\2\2\u0097\u0098\7\6\2\2\u0098\u0099\7\34\2")
         buf.write("\2\u0099\u009a\7&\2\2\u009a\u009c\7\35\2\2\u009b\u0092")
         buf.write("\3\2\2\2\u009b\u0097\3\2\2\2\u009c\33\3\2\2\2\u009d\u009e")
         buf.write("\7\7\2\2\u009e\u009f\7\34\2\2\u009f\u00a0\7(\2\2\u00a0")
         buf.write("\u00a1\7\22\2\2\u00a1\u00a4\5\32\16\2\u00a2\u00a3\7\22")
-        buf.write("\2\2\u00a3\u00a5\7%\2\2\u00a4\u00a2\3\2\2\2\u00a4\u00a5")
+        buf.write("\2\2\u00a3\u00a5\7\"\2\2\u00a4\u00a2\3\2\2\2\u00a4\u00a5")
         buf.write("\3\2\2\2\u00a5\u00a6\3\2\2\2\u00a6\u00a7\7\35\2\2\u00a7")
         buf.write("\u00a8\7\21\2\2\u00a8\35\3\2\2\2\u00a9\u00aa\b\20\1\2")
         buf.write("\u00aa\u00bb\5\64\33\2\u00ab\u00ac\5$\23\2\u00ac\u00ad")
@@ -104,7 +104,7 @@ def serializedATN():
         buf.write("\5*\26\2\u00e0\u00de\3\2\2\2\u00e0\u00df\3\2\2\2\u00e1")
         buf.write(")\3\2\2\2\u00e2\u00e3\7\34\2\2\u00e3\u00e4\5$\23\2\u00e4")
         buf.write("\u00e5\7\35\2\2\u00e5+\3\2\2\2\u00e6\u00ea\3\2\2\2\u00e7")
-        buf.write("\u00ea\7&\2\2\u00e8\u00ea\7$\2\2\u00e9\u00e6\3\2\2\2\u00e9")
+        buf.write("\u00ea\7&\2\2\u00e8\u00ea\7%\2\2\u00e9\u00e6\3\2\2\2\u00e9")
         buf.write("\u00e7\3\2\2\2\u00e9\u00e8\3\2\2\2\u00ea-\3\2\2\2\u00eb")
         buf.write("\u00ec\t\4\2\2\u00ec/\3\2\2\2\u00ed\u00ee\t\5\2\2\u00ee")
         buf.write("\61\3\2\2\2\u00ef\u00f0\t\6\2\2\u00f0\63\3\2\2\2\u00f1")
@@ -135,7 +135,7 @@ class Wuwuzela_GrammarParser ( Parser ):
                       "EQUAL", "GREATER", "GREATER_EQUAL", "LESS", "LESS_EQUAL", 
                       "PLUS", "MINUS", "MULTIPLY", "DIVIDE", "LBRACKET", 
                       "RBRACKET", "LSQUAREBRACKET", "RSQUAREBRACKET", "LBRACE", 
-                      "RBRACE", "SOUND", "KEY", "NUMBER", "TEMPO", "VARIABLE", 
+                      "RBRACE", "TEMPO", "SOUND", "KEY", "NUMBER", "VARIABLE", 
                       "COMMENT", "STRING", "WS" ]
 
     RULE_musicProgram = 0
@@ -205,10 +205,10 @@ class Wuwuzela_GrammarParser ( Parser ):
     RSQUAREBRACKET=29
     LBRACE=30
     RBRACE=31
-    SOUND=32
-    KEY=33
-    NUMBER=34
-    TEMPO=35
+    TEMPO=32
+    SOUND=33
+    KEY=34
+    NUMBER=35
     VARIABLE=36
     COMMENT=37
     STRING=38
