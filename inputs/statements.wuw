@@ -20,4 +20,8 @@ music {
     var i = i + 1;
     print(i);
   }
+
+  if (i > 3) {
+    print(i);
+  }
 }
