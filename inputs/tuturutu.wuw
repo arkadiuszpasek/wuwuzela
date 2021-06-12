@@ -1,0 +1,40 @@
+music {
+
+  var cont =  [
+    A, C, D, D,
+    D, E, F, F,
+    F, G, E, E,
+    D, C, C, D,
+
+    A, C, D, D,
+    D, E, F, F,
+    F, G, E, E,
+    D, C, D,
+
+    A, C, D, D,
+    D, F, G, G,
+    G, A, A#, A#,
+    A, G, A, D,
+    D, E, F, F, G, A, D,
+    D, F, E, E, F, D, E,
+
+    A, C, D, D,
+    D, E, F, F,
+    F, G, E, E,
+    D, C, C, D,
+
+    A, C, D, D,
+    D, E, F, F,
+    F, G, E, E,
+    D, C, D,
+    A, C, D, D,
+    D, F, G, G,
+    G, A, A#, A#, A, G, A, D,
+    D, E, F, F, G, A, D,
+    D, F, E, E, D, C, D,
+  ];
+  print(cont);
+
+  write("tutu.mid", composition(cont), T90);
+
+}
