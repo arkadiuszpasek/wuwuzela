@@ -34,7 +34,7 @@ RSQUAREBRACKET: ']';
 LBRACE: '{';
 RBRACE: '}';
 
-TEMPO: [T][1-9][0-9][0-9];
+TEMPO: [T][1-9][0-9][0-9]?;
 SOUND: [A-G][#]*[b]*([-][1-6])?;
 KEY: [a-g][m];
 NUMBER: ([0-9]+[.])?[0-9]+;

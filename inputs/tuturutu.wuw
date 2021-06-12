@@ -35,6 +35,6 @@ music {
   ];
   print(cont);
 
-  write("tutu.mid", composition(cont), T100);
+  write("tutu.mid", composition(cont), T90);
 
 }
