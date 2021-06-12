@@ -1,4 +1,4 @@
-### Generating parser (antlr parser generator)
+### Wuwuzela
 
 ## How to
 
@@ -20,11 +20,11 @@ Make sure generated files are inside `/grammar` directory
 
 ### Running program
 
-`python script.py input.txt`
+`python script.py input.wuw`
 
 ### Display parse tree from input
 
-`python tree.py input.txt`
+`python tree.py input.wuw`
 
 ## Development
 
