@@ -1,5 +1,5 @@
 music {
     var cont = [A, B, C, D];
     var num = 5;
-    add(5, cont);
+    add(num, cont);
 }
