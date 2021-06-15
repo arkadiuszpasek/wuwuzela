@@ -1,0 +1,5 @@
+music {
+    var cont = [A, B, C, D, E, F, G];
+    transpose(cont, am);
+    write("error.mp3", composition(cont));
+}
