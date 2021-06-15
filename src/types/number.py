@@ -17,7 +17,9 @@ class Number(Variable):
             return Number(self.value + value.value)
         if type(value) == float or type(value) == int:
             return Number(self.value + value)
-        raise TypeError(f"Value of type ${type(value)} cannot be used in number.add")
+        raise SystemExit(
+            TypeError(f"Value of type ${type(value)} cannot be used in number.add")
+        )
 
     def sub(self, value):
         # self._log_op(value, "-")
@@ -26,7 +28,9 @@ class Number(Variable):
             return Number(self.value - value.value)
         if type(value) == float or type(value) == int:
             return Number(self.value - value)
-        raise TypeError(f"Value of type ${type(value)} cannot be used in number.sub")
+        raise SystemExit(
+            TypeError(f"Value of type ${type(value)} cannot be used in number.sub")
+        )
 
     def mult(self, value):
         # self._log_op(value, "*")
@@ -35,7 +39,9 @@ class Number(Variable):
             return Number(self.value * value.value)
         if type(value) == float or type(value) == int:
             return Number(self.value * value)
-        raise TypeError(f"Value of type ${type(value)} cannot be used in number.mult")
+        raise SystemExit(
+            TypeError(f"Value of type ${type(value)} cannot be used in number.mult")
+        )
 
     def div(self, value):
         # self._log_op(value, "/")
@@ -44,7 +50,9 @@ class Number(Variable):
             return Number(self.value / value.value)
         if type(value) == float or type(value) == int:
             return Number(self.value / value)
-        raise TypeError(f"Value of type ${type(value)} cannot be used in number.div")
+        raise SystemExit(
+            TypeError(f"Value of type ${type(value)} cannot be used in number.div")
+        )
 
     def _log_op(self, value, op):
         print(f"Operation {op} -- {value} on self {self}")
