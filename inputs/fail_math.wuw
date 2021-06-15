@@ -1,0 +1,6 @@
+music {
+  var number = 5;
+  var note = G#;
+
+  var y = number + note;
+}
